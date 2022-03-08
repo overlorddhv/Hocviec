@@ -21,3 +21,10 @@ Người sử dụng hosting tiến hành upload các files dữ liệu lên hos
 **3. Có mấy loại hosting?**\
 **3.1. Shared Hosting**\
 Shared Hosting là dịch vụ lưu trữ website nơi mà có rất nhiều web server được kết nối với hệ thống internet. Shared Hosting đó là gói hosting được chia nhỏ ra từ các Reseller Hosting. Mọi database, web platform, source code, hệ điều hành website sẽ được đặt trong một máy chủ vật lý và Shared Hosting sẽ chia sẻ các tài nguyên trên server vật lý này.
+* Ưu điểm của Shared Hosting
+  *  Tiết kiệm chi phí: việc sử dụng Shared Hosting sẽ có mức chi phí rẻ hơn so với các dịch vụ khác, bởi lẽ tổng chi phí cho việc tiến hành bảo trì máy chủ sẽ được tiến hành phân bổ trên nhiều người dùng dịch vụ.
+  * Dễ dàng trong việc quản lý: với dịch vụ Shared Hosting bạn sẽ không quá khó khăn trong quá trình quản lý vì nó không đòi hỏi nhiều loại kiến thức liên quan.
+* Nhược điểm của Shared Hosting 
+  * Cấu hình Shared Hosting không cao do bị giới hạn về dung lượng sử dụng
+  * Tính bảo mật không cao, dễ bị tấn công cục bộ vì có quá nhiều người dùng trên một máy chủ
+  * Website sẽ bị chạy chậm lại khi có lượng truy cập lớn do tài nguyên trên máy chủ phân bổ không được hợp lý.
