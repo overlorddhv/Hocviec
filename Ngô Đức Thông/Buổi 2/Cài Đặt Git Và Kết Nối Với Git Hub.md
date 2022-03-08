@@ -135,6 +135,6 @@ Bạn chọn New SSH Key để add key của bạn vào.
 Ok. Việc add key đã hoàn tất.
 
 # Tham Khảo
-https://github.com/join
-↑https://github.com/pricing
-↑https://help.github.com/en/articles/upgrading-your-github-subscription
+
+
+
