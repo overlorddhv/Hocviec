@@ -105,3 +105,7 @@
 
 - Chia sẻ kinh nghiệm bản thân
 	Git cho phép user share code, text fragments hay bất kỳ thông tin nào với các dev khác. Do đó bạn có thể dùng nó để trao đổi text, hay gists work như git repositories, từ đó tách ra và update các phiên bản đó.
+
+# Tham Khảo
+1. https://topdev.vn/blog/github-la-gi/#mot-vai-khai-niem-cua-git-ban-can-nam
+2. https://phattrienphanmem123az.com/
