@@ -50,6 +50,7 @@ Băng thông cũng như 1 con đường, nếu băng thông lớn, tương tự 
 Thời gian up-time của VPS thường được ước lượng từ thời gian hoạt động của nó. Thời gian hoạt động của VPS từ 99,95 đến 99,9% thì bạn đều có thể chấp nhận mua được.
 
 * IP
+
 IP là viết tắt của Internet Protocol là số lượng địa chỉ IP mà nhà cung cấp dịch vụ VPS sẽ cấp cho bạn. Các dãy địa chỉ IP sẽ được nhà cung cấp chọn ngẫu nhiên.
 
 Thông thường, nếu bạn chọn mua thêm nhiều IP khác nhau thì các dãy IP đó sẽ có chung một class A và B. Ví dụ: 192.168.1.1/192.168.1.2/192.168.1.3.
