@@ -43,10 +43,13 @@ Là một server vật lý được thiết kế dành riêng cho người dùng
 **3.3. VPS Hosting**\
 VPS Hosting đó là giải pháp kết hợp giữa dedicated hosting và shared hosting. Tại đây, máy chủ vật lý sẽ được tiến hành cài đặt ứng dụng ảo để tạo ra nhiều server ảo. Loại web hosting này vẫn dùng chung với các người dùng khác, song phía nhà cung cấp sẽ tiến hành lập server vật lý có bộ nhớ, không gian, sức mạnh xử lý dành riêng cho bạn.
 * Ưu điểm của VPS Hosting
-		* Dễ dàng nâng cấp
+  * Dễ dàng nâng cấp
   * Có tài nguyên server riêng với mức giá thấp do sử dụng server ảo nên không phải tiến hành mua hẳn server
   * Khả năng truy cập lớn từ website khác mà không làm ảnh hưởng tới hiệu năng
   * Khả năng tùy biến cao
 * Nhược điểm VPS Hosting
   * Đòi hỏi phải có kiến thức và kỹ thuật quản trị server
- 	* So với Shared Hosting thì VPS Hosting có chi phí cao hơn.
+  * So với Shared Hosting thì VPS Hosting có chi phí cao hơn.
+
+**3.4. Cloud Hosting**
+
