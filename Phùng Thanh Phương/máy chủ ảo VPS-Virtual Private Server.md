@@ -23,3 +23,37 @@ Càng nhiều RAM càng tốt vì đa số các loại RAM đều giống nhau v
 Ngoài ra, bạn cũng nên tuỳ thuộc vào lượng truy cập website mà chọn RAM nhiều hay ít. Đối với nhu cầu sử dụng wordPress, lượng truy cập 5000/ngày và 100 user online cùng lúc, bạn cần tối thiểu 1GB RAM.
 
 * SWAP
+
+SWAP là bộ nhớ ảo để lưu lại các hành động xử lý cũ nếu như bộ nhớ RAM bị đầy. Bản thân SWAP là một không gian lưu trữ trên ổ cứng chứ không phải là một bộ nhớ độc lập.
+
+Không phải VPS nào cũng hỗ trợ bộ nhớ SWAP mà chỉ có các XEN VPS mới hỗ trợ SWAP.
+
+* Ổ cứng (Disk)
+
+Là không lưu trữ sẽ được sử dụng để lưu các file cài đặt của hệ điều hành và các file của mã nguồn website bạn lưu trên đó.
+
+Ổ đĩa hiện nay được chia làm 2 loại: HDD và SSD:
+
+   * HDD (Hard Disk Drive): Là loại ổ đĩa thông dụng nhất vẫn được sử dụng trên máy tính.
+   * SSD (Solid State Drive): SSD hoặc ổ cứng bán dẫn, là loại ổ cứng dùng để lưu trữ dữ liệu nhưng tốc độ truy xuất dữ liệu nhanh hơn so với HDD 300 lần. Ví dụ, test thử ổ HDD có tốc độ truy xuất chỉ khoảng 80mb/s nhưng SSD thì có tốc độ lên tới hơn 400mb/s.
+
+Ổ cứng loại SSD thường giá sẽ đắt hơn loại ổ HDD.
+
+* CPU Core
+
+Đối với CPU bạn cần quan tâm đến 2 chỉ tiêu quan trọng đó chính là: số Core, tốc độ xung nhịp. Thường thì số core càng cao thì khả năng xử lý dữ liệu càng tốt. Ở các gói VPS, trung bình bạn sẽ được chọn từ 1 core đến 3 core.
+
+* Băng thông
+Băng thông cũng như 1 con đường, nếu băng thông lớn, tương tự như một con đường rộng, nhiều người có thể đi qua, tình trạng tắc nghẽn khó xảy ra và ngược lại. Các nhà cung cấp băng thông thường cung cấp lượng băng thông tối thiểu 10 – 20 Mbps.
+
+* Thời gian Up-time
+Thời gian up-time của VPS thường được ước lượng từ thời gian hoạt động của nó. Thời gian hoạt động của VPS từ 99,95 đến 99,9% thì bạn đều có thể chấp nhận mua được.
+
+* IP
+IP là viết tắt của Internet Protocol là số lượng địa chỉ IP mà nhà cung cấp dịch vụ VPS sẽ cấp cho bạn. Các dãy địa chỉ IP sẽ được nhà cung cấp chọn ngẫu nhiên.
+
+Thông thường, nếu bạn chọn mua thêm nhiều IP khác nhau thì các dãy IP đó sẽ có chung một class A và B. Ví dụ: 192.168.1.1/192.168.1.2/192.168.1.3.
+
+* Hệ điều hành của máy chủ ảo
+
+Có 2 hệ điều hành phổ biến cho các máy chủ ảo là: Linux và Window. Linux thì thân thiện với người dùng tốt hơn và chi phí ít hơn, hỗ trợ ứng dụng nhiều hơn so với Window. Tuy nhiên, nếu bạn làm việc với Dot Net hoặc Visual Studio, bạn nên chọn máy chủ ảo của Window.
