@@ -5,10 +5,10 @@ Hay nói đơn giản thì máy chủ cũng là một máy tính, nhưng đượ
 
 **2. Các loại máy chủ (Server)**\
 - Theo phương pháp xây dựng một hệ thống máy chủ, máy chủ chia làm 3 loại:
-
-	- Máy chủ vật lý riêng (Dedicated Server): Là máy chủ chạy trên phần cứng và các thiết bị hỗ trợ riêng biệt gồm: HDD, CPU, RAM, Card mạng.
-	- Máy chủ ảo (VPS): Là dạng máy chủ được tạo thành bằng phương pháp sử dụng công nghệ ảo hóa để chia tách từ một máy chủ vật lý riêng thành nhiều máy chủ ảo khác nhau. Các máy chủ ảo có tính năng tương tự như máy chủ vật lý đó và chia sẻ tài nguyên từ máy chủ.
-	- Máy chủ đám mây (Cloud Server): Là máy chủ được kết hợp từ nhiều máy chủ vật lý khác nhau cùng với hệ thống lưu trữ SAN.
+	- Máy chủ vật lý (Dedicated Server): Là máy chủ chạy trên phần cứng như RAM, HDD, CPU, Card mạng,… Tất cả đều phụ thuộc vào phần cứng, khi hư hỏng hay thay đổi cấu hình máy chủ và nâng cấp đều phải thay đổi phần cứng của máy chủ.
+	- Máy chủ ảo (VPS – Virtual Private Server): Máy chủ ảo VPS, được chia thành nhiều server khác từ máy chủ vật lý. Và nó có tính năng như máy chủ vật lý ban đầu. Việc nâng cấp dễ dàng thông qua phần mềm quản lý hệ thống.
+	- Máy chủ đám mây (Cloud Server): Là máy chủ được xây dựng trên nền tảng điện toán đám mây nên dễ dàng nâng cấp từng phần mà không gián đoạn quá trình sử dụng. Và được kết hợp từ nhiều máy chủ vật lý khác nhau với cùng hệ thống lưu trữ SAN (Storage Area Network) với tốc độ truy xuất vượt trội giúp máy chủ hoạt động ổn định.
+	
 
 - Theo chức năng, máy chủ được chia thành các loại sau:
 	-	Database servers (máy chủ cơ sở dữ liệu).
@@ -28,3 +28,43 @@ Lưu trữ thông tin, quản lý và vận hành những phần mềm của doa
 
 ![image](https://user-images.githubusercontent.com/48250210/157186166-1ea86f52-0cde-4787-9e3e-fb0b9bac95c2.png)
 
+**4. Server khác với máy tính thông thường ở điểm nào?**\
+**4.1. Dựa trên mục đích sử dụng**\
+Điểm khác nhau cơ bản của 2 thiết bị là về mục đích sử dụng.
+
+- Máy tính cá nhân được sử dụng cho nhu cầu đơn giản như văn phòng, học tập, lướt web, game…Các yêu cầu công việc ko đòi hỏi việc hoạt động liên tục trong thời gian dài.
+- Máy Server được sử dụng để hoạt động liên tục trong thời gian dài nhiều ngày nhiều tháng hoặc cả năm. Ngoài ra nó còn được sử dụng để có thể. quản lý được nhiều thiết bị máy tính cá nhân (Client) nhằm kết nối thành một mạng lưới các máy tính với nhau.
+
+**4.2. Dựa vào cấu hình phần cứng**
+PC và Server đều cấu tạo từ những thành cơ bản của một chiếc máy tính như nguồn điện, vi xử lý, bộ nhớ, mainboard, các card ngoại vi mở rộng …
+
+Tuy nhiên do yêu cầu nhiệm vụ mà Server có các thành phần cấu tạo chuyên dùng để đáp ứng yêu cầu đặt ra.
+
+CPU nhiều nhân nhiều luồng hơn, nguồn điện ổn định ổn, nhiều ổ cứng để có thể tăng khả năng lưu trữ, bộ nhớ RAM cao hơn…
+
+Về mặt ứng dụng Server được dùng vào những công việc đặc thù mà một máy PC không thể thực hiện được như quản lý hệ thống mạng, máy chủ lưu trữ, máy chủ phần mền v.v…
+
+**5. Phân biệt sự khác nhau của các loại máy chủ**\
+**5.1.  Máy chủ vật lý (Dedicated Server)**
+* Tính sẵn sàng: Toàn bộ dữ liệu được lưu trên máy chủ vật lý. Chi phí sao lưu dữ liệu tốn kém.
+* Tài nguyên: Tài nguyên riêng biệt, độc lập, không chia sẻ tài nguyên với ai.
+* Hiệu năng: Khách hàng sẽ được toàn quyền quản trị máy chủ. Hiệu năng ổn định, an toàn.
+* Quản trị: Người dùng được toàn quyền quản trị, cài đặt hay tùy biến cấu hình 
+* Khả năng mở rộng: Dedicated Server mỗi khi nâng cấp khá phức tạp.Thay linh kiện, thiết bị chuyên dụng và có thể bị downtime trong quá trình nâng cấp.
+* Chi phí: chi phí vận hành, thiết bị, backup,... cao hơn VPS
+
+**5.2. Máy chủ ảo (VPS – Virtual Private Server)**
+* Tính sẵn sàng: Được tạo ra từ máy chủ vật lý nên bị phụ thuộc. Trong trường hợp máy chủ vật lý bị hỏng có thể dẫn đến ảnh hưởng về dữ liệu
+* Tài nguyên: Dù VPS có tính năng như máy chủ vật lý nhưng vẫn chia sẻ tài nguyên từ máy chủ vật lý gốc.Bị giới hạn tài nguyên bởi RAM, CPU,..từ máy chủ vật lý.
+* Hiệu năng: Lúc cao điểm server vật lý có thể bị treo và dẫn đến VPS có thể ngừng hoạt động tạm thời.
+* Quản trị: VPS tạo ra bởi máy chủ vật lý và tính năng giống đều được toàn quyền quản trị.Nhưng yêu cầu có kiến thức và kỹ thuật tốt.
+* Khả năng mở rộng: Phụ thuộc vào tài nguyên máy chủ vật lý khi thuê để nâng cấp.Nâng cấp tài nguyên thêm bị hạn chế.
+* Chi phí: Chi phí trung bình, phổ biến phù hợp với cá nhân và doanh nghiệp vừa và nhỏ.
+
+**5.3. Máy chủ đám mây (Cloud Server)**
+* Tính sẵn sàng: Dữ liệu được lưu trữ trên “đám mây”, không lưu trữ trên máy chủ vật lý. Được sao lưu (backup) đều đặn. Dữ liệu vẫn được đảm bảo trong trường hợp máy chủ vật lý bị lỗi.
+* Tài nguyên: Tài nguyên được tích hợp công nghệ ảo hóa, sử dụng tài nguyên tính toán động
+* Hiệu năng: Cloud Server không phụ thuộc vào server vật lý nên không bị ảnh hưởng. Cơ sở dữ liệu tập trung và phân bố đều trên các máy chủ.
+* Quản trị: Người dùng hoặc có đội ngũ cũng cần có kiến thức và kỹ thuật quản trị máy chủ ảo.
+* Khả năng mở rộng: Dễ dàng nâng cấp, chỉ cần nâng giới hạn trên các server. Hoặc, chỉ cần tạo thêm máy chủ ảo mới trong nội bộ.
+* Chi phí: Chi phí linh hoạt theo mức sử dụng thực tế (CPU, RAM, HDD,…)
