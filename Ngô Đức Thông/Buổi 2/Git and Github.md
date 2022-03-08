@@ -1,4 +1,4 @@
-# I. Tìm hiểu về git và git hub.
+# Tìm hiểu về git và git hub.
 1. Một số khái niệm
 
    GitHub là một dịch vụ nổi tiếng cung cấp kho lưu trữ mã nguồn Git cho các dự án phần mềm. Github có đầy đủ những tính năng của Git, ngoài ra nó còn bổ sung những tính năng về social để các developer tương tác với nhau.
