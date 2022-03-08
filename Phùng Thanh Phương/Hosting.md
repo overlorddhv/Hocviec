@@ -28,3 +28,25 @@ Shared Hosting là dịch vụ lưu trữ website nơi mà có rất nhiều web
   * Cấu hình Shared Hosting không cao do bị giới hạn về dung lượng sử dụng
   * Tính bảo mật không cao, dễ bị tấn công cục bộ vì có quá nhiều người dùng trên một máy chủ
   * Website sẽ bị chạy chậm lại khi có lượng truy cập lớn do tài nguyên trên máy chủ phân bổ không được hợp lý.
+
+**3.2. Dedicated Server Hosting**\
+Là một server vật lý được thiết kế dành riêng cho người dùng, trong đó mọi dữ liệu tài nguyên đều được thiết kế dành riêng cho người sử dụng. Chính điều này sẽ giúp cho người sử dụng hoàn toàn quyết định đối với server tùy thích, cài đặt môi trường hosting riêng phù hợp với nhu cầu sử dụng.
+* Ưu điểm Dedicated Server Hosting
+  * Dịch vụ có tính bảo mật cao
+		* Người dùng có toàn quyền kiểm soát đối với server
+  * Quyền truy cập root
+  * Tài nguyên đáng tin cậy vì chỉ được thiết kế dành riêng cho bạn mà không chia sẻ cho bất kì ai.
+* Nhược điểm Dedicated Server Hosting
+  * Mức chi phí chi trả dịch vụ cao
+  * Đòi hỏi phải có kiến thức, kỹ năng chuyên sâu trong việc quản lý server.
+
+**3.3. VPS Hosting**\
+VPS Hosting đó là giải pháp kết hợp giữa dedicated hosting và shared hosting. Tại đây, máy chủ vật lý sẽ được tiến hành cài đặt ứng dụng ảo để tạo ra nhiều server ảo. Loại web hosting này vẫn dùng chung với các người dùng khác, song phía nhà cung cấp sẽ tiến hành lập server vật lý có bộ nhớ, không gian, sức mạnh xử lý dành riêng cho bạn.
+* Ưu điểm của VPS Hosting
+		* Dễ dàng nâng cấp
+  * Có tài nguyên server riêng với mức giá thấp do sử dụng server ảo nên không phải tiến hành mua hẳn server
+  * Khả năng truy cập lớn từ website khác mà không làm ảnh hưởng tới hiệu năng
+  * Khả năng tùy biến cao
+* Nhược điểm VPS Hosting
+  * Đòi hỏi phải có kiến thức và kỹ thuật quản trị server
+ 	* So với Shared Hosting thì VPS Hosting có chi phí cao hơn.
