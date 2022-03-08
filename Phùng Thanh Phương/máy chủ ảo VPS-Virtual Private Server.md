@@ -15,7 +15,7 @@ VPS như một giải pháp dung hòa giữa Hosting và máy chủ riêng (Dedi
 * Cài đặt lại hệ điều hành nhanh, chỉ từ 5-10 phút.
 * Tiết kiệm được chi phí đầu tư máy chủ.
 
-**3. Các thông số cần lưu ý**\
+**3. Các thông số cần lưu ý**
 * RAM
 
 Càng nhiều RAM càng tốt vì đa số các loại RAM đều giống nhau về mặt hiệu năng. Tuy nhiên, chỉ đúng với RAM vật lý, do vậy, bạn nên cân nhắc sử dụng của VPS là RAM thật (vật lý) hay là RAM ảo. Trong máy tính thì RAM là loại bộ nhớ chính, nếu máy chủ VPS của bạn càng nhiều RAM thì khả năng truy xuất dữ liệu càng tốt, bởi vì khi dùng VPS bạn sẽ cần RAM để xử lý các vấn đề như xử lý các đoạn mã PHP với phần mềm PHP, xử lý truy vấn nhập xuất của database với MySQL, các ứng dụng nhỏ đi kèm, hỗ trợ đọc ghi dữ liệu,…nên thông số này rất quan trọng.
