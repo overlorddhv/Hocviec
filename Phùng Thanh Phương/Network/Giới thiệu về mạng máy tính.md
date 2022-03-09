@@ -9,3 +9,6 @@ Việc sử dụng mạng máy tính giúp các tổ chức, danh nghiệp dễ 
 Mỗi mạng máy tính bao gồm các máy tính, thiết bị mạng, máy in,... chúng được gọi là các thành phần mạng (network component) bao gồm các thành phần chính sau:
 * Máy chủ (server): Là máy tính có các tài nguyên, dịch vụ, ứng dụng chia sẻ để cho các máy tính khác truy cập tới và sử dụng. máy chủ chạy hệ điều hành máy chủ (Windows, Linux, Unix) và cài các phần mềm chuyền dụng dành cho máy chủ. Tùy thuộc vào chức năng và nhiệm vụ mà máy chủ có thể có tên gọi khác nhau như máy chủ dữ liệu (data server), máy chủ thư điện tử (mail server), máy chủ ứng dụng (application server),...
 * Máy trạm (client): Là các máy tính trong mạng có thể kết nối đến các máy chủ để sử dụng các tài nguyên mà máy chủ chia sẻ. máy trạm chạy hệ thống điều hành máy trạm và các phần mềm máy trạm.
+* Phương tiện truyền dẫn (media): Là các thành phần truyền dẫn vật lý giữa các máy tính như dây cáp (cable), sóng radio,...
+* Tài nguyên (resource): Là các ứng dụng, dữ liệu, phần cứng chuyên dụng,... được cung cấp bởi các máy chủ trên mạng cho người dùng thông qua các máy trạm (files, máy in,...)
+* Card mạng (netwwork adapter): Là một thiết bị chuyên dụng giúp các máy tính có thể gửi dữ liệu tới các máy tính thông qua phương tiện truyền dẫn
