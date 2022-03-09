@@ -79,3 +79,49 @@ Nhược điểm của mạng hình sao
 * Mạnh dạng hình sao yêu cầu phải được kết nối một cách độc lập với từng thiết bị ở nút thông tin đến trung tâm. Song song đó là khoảng cách kết nối từ thiết bị đến trung tâm cũng rất hạn chế và thường chỉ đạt khoảng 100m.
 
 Nhìn một cách tổng quan, mô hình mạng dạng hình sao giúp cho các máy tính kết nối với bộ tập trung (HUB) bằng cáp xoắn. Kiểu kết nối trên cho phép việc kết nối máy tính trực tiếp với HUB mà không cần thông qua trục BUS. Nhờ vậy mà hệ thống mạng hạn chế tối đa các yếu tố gây ngưng trệ mạng trong quá trình hoạt động.
+
+**4.2. Mạng hình tuyến (Bus Topology)**
+
+Bus Topology cũng là một trong các kiểu kết nối mạng được sử dụng rất phổ biến. Mô hình này giúp cho máy chủ và hệ thống máy tính hoặc các nút thông tin được kết nối cùng nhau trên một trục đường dây cáp chính. Mục đích của sự kết nối này là nhằm chuyển tải các tín hiệu thông tin.
+
+Thông thường ở phía hai đầu của dây cáp sẽ được bịt kín bằng thiết bị terminator. Riêng các tín hiệu và gói dữ liệu di chuyển trong dây cáp sẽ mang theo địa chỉ của điểm đến.
+
+Ưu điểm nổi bật nhất của mạnh hình tuyến chính là việc tiết kiệm chiều dài dây cáp và rất dễ lắp đặt. Nhưng mô hình mạng cũng tồn tại những khuyết điểm điển hình như dễ gây ra sự ùn tắc giao thông trong quá trình di chuyển dữ liệu số lượng lớn. Một khi có sự cố hư hỏng xảy ra ở đoạn cáp nào đó, user sẽ rất khó phát hiện. Vì vậy bạn bắt buộc phải tạm ngừng hoạt động trên đường dây và toàn bộ hệ thống để tiến hành sửa chữa.
+
+![image](https://user-images.githubusercontent.com/48250210/157407365-59f68fee-48c5-48f1-b012-9a59b498e435.png)
+
+**4.3. Mạnh dạng vòng (Ring Topology)**
+
+Mô hình mạng LAN dạng vòng được bố trí theo dạng xoay vòng. Trong trường hợp này, đường dây cáp sẽ được thiết kế thành vòng tròn khép kín. Các tín hiệu chạy quanh vòng tròn sẽ di chuyển theo một chiều nào đó cố định.
+
+Bên trong mạng dạng vòng, tại mỗi một thời điểm nhất định chỉ có một nút có khả năng truyền tín hiệu trong số hệ thống các nút thông tin. Song song đó, dữ liệu truyền đi cũng phải kèm theo địa chỉ đến tại mỗi trạm tiếp nhận.
+
+Ưu điểm của mạng dạng vòng chính là có thể nới rộng hệ thống mạng ra xa. Số lượng dây dẫn cần thiết để sử dụng cũng ít hơn so với hai mô hình mạng kể trên. Tuy nhiên khuyết điểm lớn nhất của kiểu mạng dạng vòng chính là đường dây phi khép kín. Một khi tín hiệu bị ngắt tại một điểm nào đó, toàn bộ hệ thống cũng sẽ ngừng hoạt động.
+
+![image](https://user-images.githubusercontent.com/48250210/157407455-a7a0aa47-2137-447e-adf0-79c1a342cf81.png)
+
+**4.4. Mạng dạng lưới (Mesh Topology)**
+
+Mesh Topology hay còn gọi là mạnh dạng lưới. Sản phẩm có cấu trúc dạng lưới được ứng dụng phổ biến trong các mạng nắm giữ vai trò quan trọng và không thể bị ngừng hoạt động. Điển hình như hệ thống mạng của nhà máy điện nguyên tử hoặc hệ thống mạng an ninh, quốc phòng.
+
+Đối với mạng dạng lưới, mỗi một thiết bị máy tính sẽ được kết nối với tất cả cả các máy tính còn lại. Đó cũng là cấu trúc quen thuộc của mạng Internet.
+
+![image](https://user-images.githubusercontent.com/48250210/157408744-e5eef765-069e-49ba-9a48-ad8720351d48.png)
+
+**5. Các phương pháp truyền tin**
+
+**5.1. Mạng chuyển mạch kênh (Circuit Switching Network)**
+
+Khi có hai trạm cần trao đổi thông tin với nhau thì giữa chúng sẽ được thiết lập một "kênh" cố định và được duy trì cho đến khi một trong hai bên ngắt kết nối. Dữ liệu chỉ được truyền theo con đường cố định này. Kỹ thuật chuyển mạch kênh được sử dụng trong các kết nối ATM (Asynchronous Transfer Mode) và Dial-up ISDN (Integrated Services Digital Networks). Ví dụ về mạng chuyển mạch kênh là mạng điện thoại.
+
+Ưu điểm là kênh truyền được dành riêng trong suốt quá trình giao tiếp do đó tốc độ truyền dữ liệu được bảo đảm. Điều này là đặc biệt quan trọng đối với các ứng dụng thời gian thực như audio và video.
+
+Nhược điểm là phải tốn thời gian để thiết lập đường truyền cố định giữa hai trạm; hiệu suất sử dụng đường truyền không cao, vì có lúc trên kênh không có dữ liệu truyền của hai trạm kết nối, nhưng các trạm khác không được sử dụng kênh truyền này.
+
+**5.2. Mạng chuyển mạch thông báo (Message Switching Network)**
+
+Không giống chuyển mạch kênh, chuyển mạch thông báo không thiết lập liên kết dành riêng giữa hai trạm giao tiếp mà thay vào đó mỗi thông báo được xem như một khối độc lập bao gồm cả địa chỉ nguồn và địa chỉ đích. Mỗi thông báo sẽ được truyền qua các trạm trong mạng cho đến khi nó đến được địa chỉ đích, mỗi trạm trung gian sẽ nhận và lưu trữ thông báo cho đến khi trạm trung gian kế tiếp sẵn sàng để nhận thông báo sau đó nó chuyển tiếp thông báo đến trạm kế tiếp, chính vì lý do này mà mạng chuyển mạch thông báo còn có thể được gọi là mạng lưu và chuyển tiếp (Store and Forward Network). Một ví dụ điển hình về kỹ thuật này là dịch vụ thư điện tử (e-mail), nó được chuyển tiếp qua các trạm cho đến khi tới được đích cần đến.
+
+Ưu điểm là cung cấp một sự quản lý hiệu quả hơn đối với sự lưu thông của mạng, bằng cách gán các thứ tự ưu tiên cho các thông báo và đảm bảo các thông báo có độ ưu tiên cao hơn sẽ được lưu chuyển thay vì bị trễ do quá trình lưu thông trên mạng; giảm sự tắc nghẽn trên mạng, các trạm trung gian có thể lưu giữ các thông báo cho đến khi kênh truyền rảnh mới gửi thông báo đi; tăng hiệu quả sử dụng kênh truyền, với kỹ thuật này các trạm có thể dùng chung kênh truyền.
+
+Nhược điểm là độ trễ do việc lưu trữ và chuyển tiếp thông báo là không phù hợp với các ứng dụng thời gian thực, Các trạm trung gian phải có dung lượng bộ nhớ rất lớn để lưu giữ các thông báo trước khi chuyển tiếp nó tới một trạm trung gian khác (kích thước của các thông báo không bị hạn chế).
