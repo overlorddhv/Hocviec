@@ -60,7 +60,9 @@ Mạng diện rộng được tạo ra nhằm kết nối trên một diện l�
 * Mạng VPN (Virtual Private Network) hay thường gọi là mạng riêng ảo giúp người dùng kết nối mạng an toàn khi tham gia vào mạng cộng đồng. Mô hình mạng này cho phép người dùng kết nối nhiều site khác nhau tương tự như mô hình mạng WAN.
 
 **4. Các kiểu liên kết mạng**
+
 **4.1. Mạng dạng hình sao (Star Topology)**
+
 Star Topology là mạnh dạng hình sao có một trung tâm và các nút thông tin. Bên trong mạng, các nút thông tin là những trạm đầu cuối. Đôi khi nút thông tin cũng chính là hệ thống các máy tính và những thiết bị khác của mạng LAN. Khu vực trung tâm mạng dạng hình sao đảm nhận nhiệm vụ điều phối mọi hoạt động bên trong hệ thống. Bộ phận này mang các chức năng cơ bản là:
 * Nhận dạng những cặp địa chỉ gửi và nhận có quyền chiếm tuyến thông tin và tiến hành quá trình liên lạc với nhau.
 * Phê duyệt quá trình theo dõi và xử lý khi các thiết bị trao đổi thông tin với nhau.
@@ -125,3 +127,12 @@ Không giống chuyển mạch kênh, chuyển mạch thông báo không thiết
 Ưu điểm là cung cấp một sự quản lý hiệu quả hơn đối với sự lưu thông của mạng, bằng cách gán các thứ tự ưu tiên cho các thông báo và đảm bảo các thông báo có độ ưu tiên cao hơn sẽ được lưu chuyển thay vì bị trễ do quá trình lưu thông trên mạng; giảm sự tắc nghẽn trên mạng, các trạm trung gian có thể lưu giữ các thông báo cho đến khi kênh truyền rảnh mới gửi thông báo đi; tăng hiệu quả sử dụng kênh truyền, với kỹ thuật này các trạm có thể dùng chung kênh truyền.
 
 Nhược điểm là độ trễ do việc lưu trữ và chuyển tiếp thông báo là không phù hợp với các ứng dụng thời gian thực, Các trạm trung gian phải có dung lượng bộ nhớ rất lớn để lưu giữ các thông báo trước khi chuyển tiếp nó tới một trạm trung gian khác (kích thước của các thông báo không bị hạn chế).
+
+**5.3. Mạng chuyển mạch gói (Packet Switching Network)**
+
+Kỹ thuật này được đưa ra nhằm tận dụng các ưu điểm và khắc phục những nhược điểm của hai kỹ thuật trên, đối với kỹ thuật này các thông báo được chia thành các gói tin (packet) có kích thước thay đổi, mỗi gói tin bao gồm dữ liệu, địa chỉ nguồn, địa chỉ đích và các thông tin về địa chỉ các trạm trung gian. Các gói tin riêng biệt không phải luôn luôn đi theo một con đường duy nhất, điều này được gọi là chọn đường độc lập (independent routing).
+
+Ưu điểm là dải thông có thể được quản lý bằng cách chia nhỏ dữ liệu vào các đường khác nhau trong trường hợp kênh truyền bận; nếu một liên kết bị sự cố trong quá trình truyền thông thì các gói tin còn lại có thể được gửi đi theo các con đường khác; điểm khác nhau cơ bản giữa kỹ thuật chuyển mạch thông báo và kỹ thuật chuyển mạch gói là trong kỹ thuật chuyển mạch gói các gói tin được giới hạn về độ dài tối đa điều này cho phép các trạm chuyển mạch có thể lưu giữ các gói tin vào bộ nhớ trong mà không phải đưa ra bộ nhớ ngoài do đó giảm được thời gian truy nhập và tăng hiệu quả truyền tin.
+
+Nhược điểm là khó khăn của phương pháp chuyển mạch gói cần giải quyết là tập hợp các gói tin tại nơi nhận để tạo lại thông báo ban đầu cũng như xử lý việc mất các gói tin.
+
