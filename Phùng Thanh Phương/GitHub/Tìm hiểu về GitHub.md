@@ -27,3 +27,29 @@ Nơi người dùng edit, tạo file mới
 * Index
 
 Nơi bảo trì trạng thái sau khi edit trên working tree là đối tượng tiếp theo trước khi commit lên repository
+
+* Branch
+
+Dùng để phân nhánh và ghi chép lịch sử. Nhánh đã chia không bị ảnh hưởng của nhánh khác nên có thể cùng có nhiều thay đổi trong repository giống nhau
+
+Trên Git có 3 loại local branch, remote branch, remote tracking branch
+
+Local branch: Branch có thể quản lý trong local repository
+
+Remote branch: Branch ở trong remote repository
+
+Remote tracking branch: Branch để local repository tracking (theo dõi) remote branch. Ví dụ origin/master biểu thị cho việc đang tracking branch master có ở remote repository gọi là origin
+
+* Check out
+
+Triển khai branch ở repository lên working tree
+
+Trên Git không chỉ branch mà tag, Specific commit, branch của remote repository cũng có thể check out
+
+* Tag
+
+Tên được gắn vào để có thể dễ dàng tham chiếu commit
+
+* Commit
+
+Message gắn vào khi thay đổi file
