@@ -34,3 +34,5 @@ Ta có thể dùng Visual Studio Code đăng nhập với tài khoản Git đã 
 Sau khi chọn File -> Save ở bên VS Code, GitHub Desktop sẽ nhận được thay đổi. Khi đó ta có thể click vào Commit to main để thực thi thay đổi\
 ![image](https://user-images.githubusercontent.com/48250210/157371402-fa24cad1-557f-439c-b54f-2f0776ea92f0.png)
 
+Muốn đưa dữ liệu từ Local Repository lên Git Server, ta vào GitHub Desktop, chọn Repository -> Push (Ctrl + P)  ta sẽ nhận thấy được thay đổi trên Git Server
+![image](https://user-images.githubusercontent.com/48250210/157372582-4bbf1cb6-f05a-474e-9e85-6c404a5022bb.png)
