@@ -36,14 +36,14 @@ Tầng mạng còn cung cấp các thuật toán dò đường cho các bộ đ�
 + Tầng vật lý (Physical Layer) 
 Bao gồm các thiết bị phần cứng giúp truyền tải dữ liệu như cáp, bộ định tuyến,…. Ở tầng này dữ liệu được truyền tải dưới dạng bit 0 và 1
 
-* Ưu điểm của mô hình OSI 
+# Ưu điểm của mô hình OSI 
 + Mỗi tầng có 1 cấu trúc và chức năng riêng nên dễ dàng xây dựng và sửa chữa
 
 + Có thể tích hợp trong nhiều mạng lưới khác nhau
 
 + Hỗ trợ kết nối có liên kết và kết nối phi liên kết
 
-* Nhược điểm của mô hình OSI
+# Nhược điểm của mô hình OSI
 + Tầng phiên và tầng trình diễn thường không được sử dụng nhiều so với các tầng khác vì chức năng hạn hẹp của nó
 
 + Không hỗ trợ các giao thức, không định nghĩa bất kì giao thức nào
@@ -86,7 +86,7 @@ Tầng vật lý (còn được gọi là tầng liên kết dữ liệu) là t�
 
 Tại đây, các gói dữ liệu được đóng vào khung (gọi là Frame) và được định tuyến đi đến đích đã được chỉ định ban đầu
 
-* Ưu điểm của mô hình TCP/IP
+# Ưu điểm của mô hình TCP/IP
 + Thiết lập kết nối giữa các loại máy tính khác nhau
 
 + Hoạt động độc lập với hệ điều hành
@@ -101,7 +101,7 @@ Tại đây, các gói dữ liệu được đóng vào khung (gọi là Frame) 
 
 + Nhẹ, không gây nhiều áp lực với máy tính hay mạng
 
-* Nhược điểm của mô hình TCP/IP
+# Nhược điểm của mô hình TCP/IP
 + Việc cài đặt khá phức tạp, khó để quản lý
 
 + Tầng transport không đảm bảo việc phân phối các gói tin
@@ -114,7 +114,7 @@ Tại đây, các gói dữ liệu được đóng vào khung (gọi là Frame) 
 
 # 3. So sánh 2 mô hình OSI và CTP/IP
 
-* Điểm tương đồng giữa mô hình OSI và TCP/IP
+# Điểm tương đồng giữa mô hình OSI và TCP/IP
 + Chia sẻ kiến trúc chung
 
 Cả 2 mô hình đều là mô hình logic và có kiến trúc tương tự vì cả 2 mô hình đều được xây dựng dựa trên các lớp
@@ -135,7 +135,7 @@ Các tiêu chuẩn và giao thức đã được xác định trước, những 
 
 Chức năng được thực hiện giữa lớp Presentation và lớp Network tương tự như chức năng được thực hiện ở lớp Transport
 
-* Sự khác biệt giữa mô hình OSI và TCP/IP
+# Sự khác biệt giữa mô hình OSI và TCP/IP
 
 + Mô hình TCP/IP được nhiều người tin cậy và được sử dụng phổ biến trên toàn cầu hơn mô hình OSI
 + Mô hình OSI tiếp cận theo chiều dọc còn mô hình TCP/IP thì tiếp cận theo chiều ngang
