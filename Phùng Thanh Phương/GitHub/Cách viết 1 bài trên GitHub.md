@@ -24,3 +24,13 @@ Vào thư mục bạn muốn tạo bài viết mới, chọn Add file -> Create 
 
 **Bước 4.** Tại Github desktop vào mục File -> Clone Repository và đưa Repository từ Server về thư mục PhungThanhPhuong.
 ![image](https://user-images.githubusercontent.com/48250210/157368437-7f4e12c7-e942-4680-9961-af82e6ad0172.png)
+
+## Thao tác qua lại giữa Git Server và Local Repository
+Đưa dữ liệu vào local Respository đã tạo
+
+Ta có thể dùng Visual Studio Code đăng nhập với tài khoản Git đã tạo và viết project để nạp dữ liệu cho Local Respository trong GitHub Desktop
+![image](https://user-images.githubusercontent.com/48250210/157370988-36d4fcfc-ca70-42cb-b34b-5d1c8127c477.png)
+
+Sau khi chọn File -> Save ở bên VS Code, GitHub Desktop sẽ nhận được thay đổi. Khi đó ta có thể click vào Commit to main để thực thi thay đổi\
+![image](https://user-images.githubusercontent.com/48250210/157371402-fa24cad1-557f-439c-b54f-2f0776ea92f0.png)
+
