@@ -55,3 +55,5 @@ Ngoài ra còn có các loại mạng khác như:
 * PAN (Personal Area Network): hay còn gọi là mạng cá nhân khả năng kết nối phạm vi nhỏ thường được dùng thông qua các thiết bị định tuyến. Khả năng định tuyến này giúp truyền dẫn dữ liệu trên thiết bị đến đích.
 * SAN (Storage Area Networking): hay còn gọi là mạng lưu trữ, thường được dùng để kết nối các tài nguyên, dữ liệu giữa các thiết bị với nhau trong cùng một mạng, tốc độ truyền tải rất cao nhanh hơn so với mạng LAN thông thường.
 * Mạng VPN (Virtual Private Network) hay thường gọi là mạng riêng ảo giúp người dùng kết nối mạng an toàn khi tham gia vào mạng cộng đồng. Mô hình mạng này cho phép người dùng kết nối nhiều site khác nhau tương tự như mô hình mạng WAN.
+
+**4. Các mô hình mạng**
