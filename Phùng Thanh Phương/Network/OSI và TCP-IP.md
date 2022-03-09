@@ -112,3 +112,35 @@ Tại đây, các gói dữ liệu được đóng vào khung (gọi là Frame) 
         + Các giao thức trong TCP/IP không dễ để có thể thay thế
         + Không tách biệt rõ ràng các khái niệm về dịch vụ, giao diện và giao thức. Do đó nó không hiệu quả để mô tả các công nghệ mới trong mạng mới
         + Dễ bị tấn công SYN  - một kiểu tấn công từ chối dịch vụ
+
+# 3. So sánh mô hình OSI và TCP/IP
+
+**3.1 Điểm tương đồng giữa mô hình OSI và TCP/IP**
+
++ Chia sẻ kiến trúc chung
+
+Cả 2 mô hình đều là mô hình logic và có kiến trúc tương tự vì cả 2 mô hình đều được xây dựng dựa trên các lớp
+
++ Xác định tiêu chuẩn 
+
+Cả 2 lớp đều có các tiêu chuẩn xác định và chúng cũng cung cấp khuôn khổ được sử dụng để thực hiện các tiêu chuẩn và thiết bị
+
++ Quy trình khắc phục sự cố được đơn giản hóa
+
+Cả 2 mô hình đã đơn giản hóa quá trình khắc phục sự cố bằng cách chia nhỏ chức năng phức tạp thành các thành phần đơn giản hơn
+
++ Các tiêu chuẩn được xác định trước
+
+Các tiêu chuẩn và giao thức đã được xác định trước, những mô hình này không xác định lại chúng, chỉ tham khảo hoặc sử dụng lại chúng. Ví dụ, các tiêu chuẩn Ethernet đã được IEEE xác định trước khi phát triển các mô hình 
+
++ Cả 2 đều có chức năng tương tự của các lớp Transport và Network
+
+Chức năng được thực hiện giữa lớp Presentation và lớp Network tương tự như chức năng được thực hiện ở lớp Transport
+
+**3.2. Sự khác biệt giữa mô hình OSI và TCP/IP**
+
+![image](https://user-images.githubusercontent.com/48250210/157420223-26e2517f-5b9d-41e1-976d-512f04d82637.png)
+
+# 4. Kết luận
+
+Chúng ta có thể kết luận rằng mô hình TCP/IP đáng tin cậy đối với mô hình OSI, TCP/IP được sử dụng cho kết nối đầu cuối để truyền dữ liệu qua Internet. TCP/IP mạnh mẽ, linh hoạt, hữu hình và cũng gợi ý cách dữ liệu nên được gửi qua web. Lớp vận chuyển của Mô hình TCP/IP kiểm tra xem dữ liệu đã đến theo thứ tự chưa, nó có lỗi hay không, các gói bị mất có được gửi hay không, xác nhận có được nhận hay không, v.v…
