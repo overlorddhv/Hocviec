@@ -54,8 +54,29 @@ Tên được gắn vào để có thể dễ dàng tham chiếu commit
 
 Message gắn vào khi thay đổi file
 # 1. Cách tạo tài khoản GitHub
-**Bước 1:** Đầu tiên bạn hãy vào trang web Gihub.com. Sau đó nhập đầy đủ thông tin tài khoản của bạn và nhấn Sign up for Github.
-![image](https://user-images.githubusercontent.com/48250210/157359636-73f86daa-5030-4ceb-8311-53327cf80102.png)
+**Bước 1.** Đầu tiên bạn hãy vào trang web Gihub.com. Sau đó nhập đầy đủ thông tin tài khoản của bạn và nhấn Create Account.
+![image](https://user-images.githubusercontent.com/48250210/157361736-97afa9eb-3d8a-4f89-9887-c175cdd6c0c8.png)
+![image](https://user-images.githubusercontent.com/48250210/157361142-f76379dc-fd80-4829-85a4-fb36860e4ec5.png)
+![image](https://user-images.githubusercontent.com/48250210/157361304-644a4a74-88dc-4f18-82e7-26c1bda6eb8c.png)
 
-**Bước 2:** Lúc này bạn hãy vào Email để kích hoạt tài khoản của mình.
+**Bước 2.** Lúc này bạn hãy vào Email để kích hoạt tài khoản của mình.
 ![image](https://user-images.githubusercontent.com/48250210/157359773-3640695c-a702-487e-ae9e-8f646f6934a7.png)
+
+# 2. Cách tải và cài đặt GitHub
+**Bước 1.** Vào trang web "https://desktop.github.com" và chọn Dowload for Windows (64Bit).
+![image](https://user-images.githubusercontent.com/48250210/157362129-55c32b55-8580-4393-b86a-0ff90a505c4c.png)
+
+**Bước 2.** Click đúp vào file vừa tải về. Lúc này ứng dụng sẽ tự động cài đặt vào máy.
+![image](https://user-images.githubusercontent.com/48250210/157362250-1bc4fa12-5a45-4459-b66a-9bf8a5715cfc.png)
+
+**Bước 3.** Sau khi cài đặt thành công bạn có thể đăng nhập tài khoản mình vừa tạo ở phía trên để sử dụng bằng cách chọn Sign in to GitHub.com
+![image](https://user-images.githubusercontent.com/48250210/157362324-73129141-eafb-4514-9eda-cd7fcf5f4163.png)
+
+**Bước 4.** Bạn nhập tên đăng nhập và mật khẩu, sau đó chọn Sign in. 
+![image](https://user-images.githubusercontent.com/48250210/157362584-06d2844a-331f-4dfa-ae05-c82e85a9fb16.png)
+
+**Bước 5.** Bạn nhập tên và email để hiển thị trong GitHub, sau đó nhấn Continue.
+![image](https://user-images.githubusercontent.com/48250210/157362825-a2e0744d-2f36-48ba-9df5-65d362211839.png)
+
+**Bước 6.** Nhấn Finish.\
+![image](https://user-images.githubusercontent.com/48250210/157362919-54940cfe-a06e-487b-9559-f1ccd60682e8.png)
