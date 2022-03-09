@@ -6,6 +6,7 @@ Vào thư mục bạn muốn tạo bài viết mới, chọn Add file -> Create 
 ![image](https://user-images.githubusercontent.com/48250210/157367105-d2fcdaa3-d64c-471f-91d7-8a99a12d4c46.png)
 
 
+
 **Bước 2.** Làm theo trình tự
 1. Tạo tên file
 2. Nhập nội dung
