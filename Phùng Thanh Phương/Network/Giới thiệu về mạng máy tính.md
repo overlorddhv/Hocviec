@@ -17,17 +17,18 @@ Mỗi mạng máy tính bao gồm các máy tính, thiết bị mạng, máy in,
 * Topo mạng (network topology): là cấu trúc vật lý của mạng (bus, star, ring,...) nó được phân loại dựa vào loại phương tiện truyền dẫn (media type), giao thức mạng (protocol), card mạng,...
 
 **3. Phân loại mạng máy tính**
-* LAN
+**3.1 LAN**
 
 Mạng LAN là viết tắt của từ tiếng Anh Local Area Network được tạm dịch là mạng máy tính nội bộ, giao tiếp này cho phép các thiết bị kết nối với nhau để cùng làm việc và chia sẻ dữ liệu. Kết nối này được thực hiện thông qua sợi cáp LAN hay Wifi (không dây) trong không gian hẹp, chính vì thế nó chỉ dùng được ở một phạm vi giới hạn như phòng làm việc, trong nhà, trường học…
 
 ![image](https://user-images.githubusercontent.com/48250210/157400600-4c75bc6b-c68b-49ca-b9e3-49e00a353786.png)
 
-Ưu điểm của mạng LAN: Tốc độ truyền tải cao, hỗ trợ kết nối được nhiều thiết bị nhanh chóng. Tuy bị giới hạn về phạm vi kết nối nhưng chi phí, sử dụng dây ít, dễ dàng quản trị.
+Ưu điểm của mạng LAN:
+* Tốc độ truyền tải cao, hỗ trợ kết nối được nhiều thiết bị nhanh chóng. Tuy bị giới hạn về phạm vi kết nối nhưng chi phí, sử dụng dây ít, dễ dàng quản trị.
 
-* MAN
+**3.2. MAN**
 
- Mạng MAN (Metropolitan Area Network) hay còn gọi là mạng đô thị liên kết từ nhiều mạng LAN qua dây cáp, các phương tiện truyền dẫn khác,... Khả năng kết nối trong phạm vi lớn như trong một thị trấn, thành phố, tỉnh.
+Mạng MAN (Metropolitan Area Network) hay còn gọi là mạng đô thị liên kết từ nhiều mạng LAN qua dây cáp, các phương tiện truyền dẫn khác,... Khả năng kết nối trong phạm vi lớn như trong một thị trấn, thành phố, tỉnh.
 
 Mô hình mạng MAN thường được dùng chủ yếu cho đối tượng là tổ chức, doanh nghiệp nhiều chi nhánh, nhiều bộ phận kết nối với nhau.
 
@@ -35,9 +36,10 @@ Mô hình mạng MAN thường được dùng chủ yếu cho đối tượng l�
 
 Mạng Man thường được sử dụng cho doanh nghiệp vì mô hình này này cung cấp nhiều loại dịch vụ như kết nối đường truyền qua voice (thoại), data (dữ liệu), video(hình ảnh), triển khai các ứng dụng dễ dàng.
 
-Ưu điểm của mạng MAN: Phạm vi kết nối lớn giúp tương tác giữa các bộ phận doanh nghiệp dễ dàng, hiệu quả,chi phí thấp, tốc độ truyền tải ổn định, bảo mật thông tin, quản lý đơn giản.
+Ưu điểm của mạng MAN:
+* Phạm vi kết nối lớn giúp tương tác giữa các bộ phận doanh nghiệp dễ dàng, hiệu quả,chi phí thấp, tốc độ truyền tải ổn định, bảo mật thông tin, quản lý đơn giản.
 
-* WAN
+**3.3. WAN**
 
 Mạng WAN ((Wide Area Network) hay còn gọi là mạng diện rộng được kết hợp giữa các mạng đô thị bao gồm cả mạng MAN và mạng LAN thông qua thiết bị vệ tinh, cáp quang, cáp dây điện.
 
@@ -45,15 +47,32 @@ Mạng WAN ((Wide Area Network) hay còn gọi là mạng diện rộng được
 
 Mạng diện rộng được tạo ra nhằm kết nối trên một diện lớn có quy mô trên quốc gia. Giao thức sử dụng trong mạng WAN là TCP/IP, đường truyền băng thông thay đổi tùy vào vị trí lắp đặt.
 
-Ưu điểm của mạng WAN: Khả năng kết nối rộng lớn, không bị giới hạn tín hiệu, dễ dàng chia sẻ thông tin, lưu trữ dữ liệu. Tốc độ truyền tải tương đối tùy vào mỗi khu vực hoặc thiết bị truyền dẫn khác nhau.
+Ưu điểm của mạng WAN:
+* Khả năng kết nối rộng lớn, không bị giới hạn tín hiệu, dễ dàng chia sẻ thông tin, lưu trữ dữ liệu. Tốc độ truyền tải tương đối tùy vào mỗi khu vực hoặc thiết bị truyền dẫn khác nhau.
 
 => có thể so sánh qua bảng sau:
 
 ![image](https://user-images.githubusercontent.com/48250210/157402459-6b6db3c1-e9c9-48c0-8157-4429af59c5d6.png)
 
-Ngoài ra còn có các loại mạng khác như:
+**3.4. Ngoài ra còn có các loại mạng khác**
 * PAN (Personal Area Network): hay còn gọi là mạng cá nhân khả năng kết nối phạm vi nhỏ thường được dùng thông qua các thiết bị định tuyến. Khả năng định tuyến này giúp truyền dẫn dữ liệu trên thiết bị đến đích.
 * SAN (Storage Area Networking): hay còn gọi là mạng lưu trữ, thường được dùng để kết nối các tài nguyên, dữ liệu giữa các thiết bị với nhau trong cùng một mạng, tốc độ truyền tải rất cao nhanh hơn so với mạng LAN thông thường.
 * Mạng VPN (Virtual Private Network) hay thường gọi là mạng riêng ảo giúp người dùng kết nối mạng an toàn khi tham gia vào mạng cộng đồng. Mô hình mạng này cho phép người dùng kết nối nhiều site khác nhau tương tự như mô hình mạng WAN.
 
-**4. Các mô hình mạng**
+**4. Các kiểu liên kết mạng**
+**4.1. Mạng dạng hình sao (Star Topology)**
+Star Topology là mạnh dạng hình sao có một trung tâm và các nút thông tin. Bên trong mạng, các nút thông tin là những trạm đầu cuối. Đôi khi nút thông tin cũng chính là hệ thống các máy tính và những thiết bị khác của mạng LAN. Khu vực trung tâm mạng dạng hình sao đảm nhận nhiệm vụ điều phối mọi hoạt động bên trong hệ thống. Bộ phận này mang các chức năng cơ bản là:
+* Nhận dạng những cặp địa chỉ gửi và nhận có quyền chiếm tuyến thông tin và tiến hành quá trình liên lạc với nhau.
+* Phê duyệt quá trình theo dõi và xử lý khi các thiết bị trao đổi thông tin với nhau.
+* Gửi đi các thông báo về trạng thái của mạng
+
+Ưu điểm của mạng hình sao
+* Mô hình mạng LAN dạng hình sao đảm bảo quá trình hoạt động bình thường khi có một nút thông tin bị hư hỏng. Bởi kiểu mạng LAN này hoạt động dựa trên nguyên lý song song.
+* Đặc điểm cấu trúc mạng vô cùng đơn giản. Điều này giúp cho thuật toán được điều khiển một cách ổn định hơn.
+* Tùy vào nhu cầu sử dụng của User, mạnh dạng hình sao có thể được mở rộng hoặc thu hẹp theo ý muốn.
+
+Nhược điểm của mạng hình sao
+* Mặc dù có khả năng mở rộng mạng, nhưng điều này hoàn toàn phụ thuộc vào khả năng hoạt động của bộ phận trung tâm. Một khi trung tâm gặp phải sự cố, toàn bộ hệ thống mạng sẽ không thể hoạt động.
+* Mạnh dạng hình sao yêu cầu phải được kết nối một cách độc lập với từng thiết bị ở nút thông tin đến trung tâm. Song song đó là khoảng cách kết nối từ thiết bị đến trung tâm cũng rất hạn chế và thường chỉ đạt khoảng 100m.
+
+Nhìn một cách tổng quan, mô hình mạng dạng hình sao giúp cho các máy tính kết nối với bộ tập trung (HUB) bằng cáp xoắn. Kiểu kết nối trên cho phép việc kết nối máy tính trực tiếp với HUB mà không cần thông qua trục BUS. Nhờ vậy mà hệ thống mạng hạn chế tối đa các yếu tố gây ngưng trệ mạng trong quá trình hoạt động.
