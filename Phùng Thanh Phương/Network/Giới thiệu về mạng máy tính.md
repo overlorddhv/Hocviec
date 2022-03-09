@@ -26,7 +26,7 @@ Mạng LAN là viết tắt của từ tiếng Anh Local Area Network được t
 Ưu điểm của mạng LAN: Tốc độ truyền tải cao, hỗ trợ kết nối được nhiều thiết bị nhanh chóng. Tuy bị giới hạn về phạm vi kết nối nhưng chi phí, sử dụng dây ít, dễ dàng quản trị.
 
 * MAN
-* 
+
  Mạng MAN (Metropolitan Area Network) hay còn gọi là mạng đô thị liên kết từ nhiều mạng LAN qua dây cáp, các phương tiện truyền dẫn khác,... Khả năng kết nối trong phạm vi lớn như trong một thị trấn, thành phố, tỉnh.
 
 Mô hình mạng MAN thường được dùng chủ yếu cho đối tượng là tổ chức, doanh nghiệp nhiều chi nhánh, nhiều bộ phận kết nối với nhau.
@@ -38,10 +38,20 @@ Mạng Man thường được sử dụng cho doanh nghiệp vì mô hình này 
 Ưu điểm của mạng MAN: Phạm vi kết nối lớn giúp tương tác giữa các bộ phận doanh nghiệp dễ dàng, hiệu quả,chi phí thấp, tốc độ truyền tải ổn định, bảo mật thông tin, quản lý đơn giản.
 
 * WAN
-* 
-Mạng WAN ((Wide Area Network) hay còn gọi là mạng diện rộng được kết hợp giữa các mạng đô thị bao gồm cả mạng MAN và mạng LAN thông qua thiết bị vệ tinh, cáp quang, cáp dây điện. 
+
+Mạng WAN ((Wide Area Network) hay còn gọi là mạng diện rộng được kết hợp giữa các mạng đô thị bao gồm cả mạng MAN và mạng LAN thông qua thiết bị vệ tinh, cáp quang, cáp dây điện.
+
 ![image](https://user-images.githubusercontent.com/48250210/157401988-10236dbf-be36-44cc-9fa2-5bbbac9b10c0.png)
 
 Mạng diện rộng được tạo ra nhằm kết nối trên một diện lớn có quy mô trên quốc gia. Giao thức sử dụng trong mạng WAN là TCP/IP, đường truyền băng thông thay đổi tùy vào vị trí lắp đặt.
 
 Ưu điểm của mạng WAN: Khả năng kết nối rộng lớn, không bị giới hạn tín hiệu, dễ dàng chia sẻ thông tin, lưu trữ dữ liệu. Tốc độ truyền tải tương đối tùy vào mỗi khu vực hoặc thiết bị truyền dẫn khác nhau.
+
+=> có thể so sánh qua bảng sau:
+
+![image](https://user-images.githubusercontent.com/48250210/157402459-6b6db3c1-e9c9-48c0-8157-4429af59c5d6.png)
+
+Ngoài ra còn có các loại mạng khác như:
+* PAN (Personal Area Network): hay còn gọi là mạng cá nhân khả năng kết nối phạm vi nhỏ thường được dùng thông qua các thiết bị định tuyến. Khả năng định tuyến này giúp truyền dẫn dữ liệu trên thiết bị đến đích.
+* SAN (Storage Area Networking): hay còn gọi là mạng lưu trữ, thường được dùng để kết nối các tài nguyên, dữ liệu giữa các thiết bị với nhau trong cùng một mạng, tốc độ truyền tải rất cao nhanh hơn so với mạng LAN thông thường.
+* Mạng VPN (Virtual Private Network) hay thường gọi là mạng riêng ảo giúp người dùng kết nối mạng an toàn khi tham gia vào mạng cộng đồng. Mô hình mạng này cho phép người dùng kết nối nhiều site khác nhau tương tự như mô hình mạng WAN.
