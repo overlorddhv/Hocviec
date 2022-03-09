@@ -1,5 +1,5 @@
 # Các cách viết 1 bài đẩy lên Github
-## Cách 1. Viết trực tiếp trên Web của GitHub
+## Cách 1. Viết trực tiếp trên Server của GitHub
 **Bước 1.** Tạo file mới.
 
 Vào thư mục bạn muốn tạo bài viết mới, chọn Add file -> Create new file
