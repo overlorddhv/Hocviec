@@ -56,3 +56,59 @@ Bao gồm các thiết bị phần cứng giúp truyền tải dữ liệu như 
       + Không hỗ trợ các giao thức, không định nghĩa bất kì giao thức nào
       + Nhiều dịch vụ trùng lặp tại các tầng, ví dụ tầng mạng và tầng liên kết dữ liệu
       + Các tầng không thể hoạt động song song, tầng dưới phải chờ dữ liệu từ tầng trên
+
+# 2. Mô hình TCP/IP
+
+TCP/IP là viết tắt của Transmission Control Protocol/Internet Protocol. Đây là một bộ các giao thức truyền thông được sử dụng để kết nối các thiết bị mạng với nhau trên Internet. 
+
+TCP/IP cũng có thể được sử dụng như một giao thức truyền thông trong mạng máy tính riêng (mạng nội bộ).
+
+Trong đó, bộ Giao thức internet - một tập hợp các quy tắc và thủ tục - thường gọi là TCP/IP. Trong đó, TCP và IP là hai giao thức chính bên cạnh những giao thức khác trong bộ. 
+
+Bộ giao thức TCP/IP hoạt động như một lớp trừu tượng giữa các ứng dụng internet và hạ tầng router/switch.
+
+Cũng vậy, TCP/IP chỉ định cách dữ liệu được trao đổi qua internet. Nó thực hiện bằng cách cung cấp thông tin liên lạc đầu cuối. Từ đó xác định cách nó được chia thành các packet, xác định địa chỉ, truyền dẫn, định tuyến và nhận dữ liệu. 
+
+TCP/IP được thiết kế để đảm bảo độ tin cậy, nó có khả năng khôi phục tự động khi gặp sự cố trong quá trình truyền dữ liệu.
+
+Giao thức TCP/IP được chia thành 4 tầng mạng:
+
++ Tầng ứng dụng
+ 
+Đảm nhận vai trò giao tiếp dữ liệu giữa 2 máy khác nhau thông qua các dịch vụ mạng khác nhau (duyệt web, chay hay các giao thức trao đổi dữ liệu SMTP, SSH, FTP…)
+
+Dữ liệu khi đến được tầng này sẽ được định dạng để kết nối theo kiểu Byte nối Byte. Các thông tin định tuyến tại đây sẽ giúp xác định đường đi đúng của một gói tin
+
++ Tầng mạng
+
+Đảm nhận việc truyền tải dữ liệu một cách hợp lý. Nhiệm vụ của tầng Internet là xử lý các gói tin, sau đó kết nối với các mạng độc lập để vận chuyển các gói dữ liệu đã được mã hóa qua các ranh giới mạng. Tầng Internet cũng bao gồm nhiều giao thức như giao thức IP, ICMP
+
++ Tầng giao vận 
+
+Tầng dữ liệu hoạt động thông qua hai giao thức chính là TCP (Transmission Control Protocol) và UDP (User Datagram Protocol)
+
+Nhiệm vụ của tầng giao vận là duy trì liên lạc đầu cuối trên toàn mạng. Ở tầng này, TCP và UDP sẽ hỗ trợ nhau phân luồng dữ liệu. Trong nhiều trường hợp giao thức UDP sẽ được thay thế TCP
+
++ Tầng vật lý 
+
+Tầng vật lý (còn được gọi là tầng liên kết dữ liệu) là tầng thấp nhất trong mô hình TCP/IP. Tầng này chịu trách nhiệm truyền dữ liệu giữa hai thiết bị trong cùng một mạng 
+
+Tại đây, các gói dữ liệu được đóng vào khung (gọi là Frame) và được định tuyến đi đến đích đã được chỉ định ban đầu
+
+![image](https://user-images.githubusercontent.com/48250210/157419699-81e40e07-dbb3-476b-86c1-fbb100b4c4d9.png)
+
+    - Ưu điểm của mô hình TCP/IP
+        + Thiết lập kết nối giữa các loại máy tính khác nhau
+        + Hoạt động độc lập với hệ điều hành
+        + Hỗ trợ nhiều giao thức định tuyến
+        + Kiến trúc client - server, khả năng mở rộng cao
+        + Có thể hoạt động độc lập
+        + Hỗ trợ nhiều giao thức định tuyến
+        + Nhẹ, không gây nhiều áp lực với máy tính hay mạng
+
+    - Nhược điểm của mô hình TCP/IP
+        + Việc cài đặt khá phức tạp, khó để quản lý
+        + Tầng transport không đảm bảo việc phân phối các gói tin
+        + Các giao thức trong TCP/IP không dễ để có thể thay thế
+        + Không tách biệt rõ ràng các khái niệm về dịch vụ, giao diện và giao thức. Do đó nó không hiệu quả để mô tả các công nghệ mới trong mạng mới
+        + Dễ bị tấn công SYN  - một kiểu tấn công từ chối dịch vụ
