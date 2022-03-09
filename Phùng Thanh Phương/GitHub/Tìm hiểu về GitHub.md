@@ -53,3 +53,9 @@ Tên được gắn vào để có thể dễ dàng tham chiếu commit
 * Commit
 
 Message gắn vào khi thay đổi file
+# 1. Cách tạo tài khoản GitHub
+**Bước 1:** Đầu tiên bạn hãy vào trang web Gihub.com. Sau đó nhập đầy đủ thông tin tài khoản của bạn và nhấn Sign up for Github.
+![image](https://user-images.githubusercontent.com/48250210/157359636-73f86daa-5030-4ceb-8311-53327cf80102.png)
+
+**Bước 2:** Lúc này bạn hãy vào Email để kích hoạt tài khoản của mình.
+![image](https://user-images.githubusercontent.com/48250210/157359773-3640695c-a702-487e-ae9e-8f646f6934a7.png)
