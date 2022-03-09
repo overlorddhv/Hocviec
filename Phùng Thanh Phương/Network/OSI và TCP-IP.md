@@ -95,7 +95,7 @@ Tầng vật lý (còn được gọi là tầng liên kết dữ liệu) là t�
 
 Tại đây, các gói dữ liệu được đóng vào khung (gọi là Frame) và được định tuyến đi đến đích đã được chỉ định ban đầu
 
-![image](https://user-images.githubusercontent.com/48250210/157419699-81e40e07-dbb3-476b-86c1-fbb100b4c4d9.png)
+![image](https://user-images.githubusercontent.com/48250210/157420600-68cdd72e-f7a3-4cd3-8b29-3cfcf266849b.png)
 
     - Ưu điểm của mô hình TCP/IP
         + Thiết lập kết nối giữa các loại máy tính khác nhau
