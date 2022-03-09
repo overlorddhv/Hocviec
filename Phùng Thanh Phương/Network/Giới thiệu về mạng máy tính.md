@@ -66,6 +66,9 @@ Star Topology là mạnh dạng hình sao có một trung tâm và các nút th�
 * Phê duyệt quá trình theo dõi và xử lý khi các thiết bị trao đổi thông tin với nhau.
 * Gửi đi các thông báo về trạng thái của mạng
 
+![image](https://user-images.githubusercontent.com/48250210/157406952-802f9568-6362-4dc9-ae80-5137c40792f8.png)
+
+
 Ưu điểm của mạng hình sao
 * Mô hình mạng LAN dạng hình sao đảm bảo quá trình hoạt động bình thường khi có một nút thông tin bị hư hỏng. Bởi kiểu mạng LAN này hoạt động dựa trên nguyên lý song song.
 * Đặc điểm cấu trúc mạng vô cùng đơn giản. Điều này giúp cho thuật toán được điều khiển một cách ổn định hơn.
