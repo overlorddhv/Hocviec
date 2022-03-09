@@ -12,3 +12,6 @@ Mỗi mạng máy tính bao gồm các máy tính, thiết bị mạng, máy in,
 * Phương tiện truyền dẫn (media): Là các thành phần truyền dẫn vật lý giữa các máy tính như dây cáp (cable), sóng radio,...
 * Tài nguyên (resource): Là các ứng dụng, dữ liệu, phần cứng chuyên dụng,... được cung cấp bởi các máy chủ trên mạng cho người dùng thông qua các máy trạm (files, máy in,...)
 * Card mạng (netwwork adapter): Là một thiết bị chuyên dụng giúp các máy tính có thể gửi dữ liệu tới các máy tính thông qua phương tiện truyền dẫn
+* Các thiết bị kết nối như hub, switch, router
+* Giao thức mạng (netwwork protocol): là tập hợp các quy luật, quy định giúp các máy tính có thể  giao tiếp với nhau
+* Topo mạng (network topology): là cấu trúc vật lý của mạng (bus, star, ring,...) nó được phân loại dựa vào loại phương tiện truyền dẫn (media type), giao thức mạng (protocol), card mạng,...
