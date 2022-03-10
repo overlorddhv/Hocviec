@@ -60,10 +60,29 @@ Bất lợi lớn của IP tĩnh chính là cấu hình thủ công. Mọi thi�
 
 **4.4. IP Động**
 
+IP động hoạt động ngược lại so với IP tĩnh bằng cách sử dụng phương thức DHCP. Việc gán địa chỉ IP tự động này được thực hiện bằng giao thức DHCP và luôn được thay đổi mỗi khi bạn ngắt và kết nối lại (DHCP viết tắt của Dynamic Host Configuration Protocol, là giao thức tự động cấp phát địa chỉ IP đến các thiết bị trong mạng. Các địa chỉ IP được cung cấp từ giao thức DHCP sẽ cho phép chúng ta truy cập vào internet).
+
 Đây là địa chỉ IP được gán tự động cho mỗi kết nối hay node của mạng. IP động sẽ do máy chủ DHCP tùy chỉnh.
 
 Ưu điểm của IP động là tính linh hoạt cao, dễ cài đặt và quản lý. Bên cạnh đó, nó cũng không giới hạn số lượng thiết bị kết nối. Bởi các thiết bị này không cần ngắt kết nối để giải phóng IP khi có thiết bị mới truy cập.
 
 Vì những lợi thế vượt trội trên mà IP động được sử dụng rộng rãi. Tuy nhiên, IP động vẫn tồn tại nhược điểm là sẽ xảy ra xung đột IP trong cùng hệ thống mạng, do địa chỉ được tự động thay đổi định kỳ.
 
-IP động hoạt động ngược lại so với IP tĩnh bằng cách sử dụng phương thức DHCP. Việc gán địa chỉ IP tự động này được thực hiện bằng giao thức DHCP và luôn được thay đổi mỗi khi bạn ngắt và kết nối lại (DHCP viết tắt của Dynamic Host Configuration Protocol, là giao thức tự động cấp phát địa chỉ IP đến các thiết bị trong mạng. Các địa chỉ IP được cung cấp từ giao thức DHCP sẽ cho phép chúng ta truy cập vào internet).
+**4.5. IPv4 và IPv6**
+**4.5.1. IPv4**
+
+IPv4 (Internet Protocol version 4) là một giao thức phổ biến trong truyền thông dữ liệu. Nó được phát triển như một giao thức không hướng kết nối (connectionless). Dùng trong các mạng chuyển mạch gói (network packet switching) như Ethernet. Nó có nhiệm vụ cung cấp kết nối logic giữa các thiết bị mạng. Trong đó bao gồm cả việc cung cấp nhận dạng cho các thiết bị.
+
+IPv4 dựa trên mô hình best-effort, đảm bảo không phân phối hoặc tránh phân phối trùng lặp. IPv4 rất linh hoạt, có thể cấu hình tự động hay thủ công với nhiều thiết bị khác nhau, tùy vào từng loại mạng khác nhau.
+
+**4.5.1. IPv6**
+
+IPv6 (Internet Protocol version 6) là “Giao thức liên mạng thế hệ 6”. Đây là một phiên bản của giao thức liên mạng (IP) nhằm mục đích nâng cấp giao thức liên mạng phiên bản 4 (IPv4) hiện đang truyền dẫn cho hầu hết lưu lượng truy cập Internet nhưng đã hết địa chỉ.
+
+* Ưu điểm và nhược điểm của IPv6:
+
+IPv6 đã bù đắp được mọi lỗ hổng trong kỹ thuật ở IPv4. Việc cung cấp địa chỉ 128 bit (16 byte) đã làm cho tổng số lượng địa chỉ lên đến khoảng 340 nghìn nghìn tỷ.
+
+Rõ ràng, nó lớn hơn rất nhiều so với IPv4 vì được tạo nên bởi 16 bit. Đây là lý do để các mạng nên bắt đầu sử dụng IPv6 ngay từ lúc này. Tuy nhiên, việc thực hiện việc đó đến nay vẫn chưa dễ dàng. Các nhà triển khai mạng đã quen với IPv4, và cũng chưa có động thái rõ ràng về cách tiếp cận với IPv6. Nhiều người cho rằng IPv4 vẫn tốt cho tương lai gần. Nhưng rõ ràng là việc sử dụng IPv4 chỉ càng làm cho số lượng của nó giảm đi mà thôi.
+
+Một ví dụ đơn giản về khả năng vượt trội của IPv6 so với IPv4 là việc nó không cần phải chia sẻ địa chỉ IP và nhận một địa chỉ riêng biệt cho các thiết bị. Việc sử dụng IPv4 đồng nghĩa với việc một nhóm các máy tính muốn dùng chung một địa chỉ IP công cộng sẽ phải dùng đến NAT. Sau đó là vấn đề truy cập trực tiếp vào một trong số chúng. Bạn sẽ cần thiết lập các cấu hình phức tạp. Có thể gồm chuyển tiếp, thay đổi tường lửa…Đối với IPv6, sẽ có nhiều địa chỉ để sử dụng hơn. Do đó, các máy tính sử dụng IPv6 có thể truy cập công khai mà không cần cấu hình bổ sung, tiết kiệm được tài nguyên.
