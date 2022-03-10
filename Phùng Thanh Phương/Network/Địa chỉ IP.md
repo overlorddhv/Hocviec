@@ -43,3 +43,17 @@ IP Public là địa chỉ IP cộng đồng. Đây là IP sử dụng trong m�
 **4.3. IP Tĩnh**
 
 IP này là địa chỉ được cấu hình thủ công cho các thiết bị kết nối mạng. Nó được gọi là IP tĩnh do tính chất cố định và không thể thay đổi. Các thiết bị phải được cấu hình đúng với router để chúng có thể giao tiếp. Điều này cũng là nhược điểm của IP tĩnh. Vì vậy, một số người dùng đã thực hiện chuyển IP từ tĩnh sang động.
+
+Địa chỉ IP tĩnh giúp kết nối Internet nhanh chóng không cân đợi cấp phát IP. IP tĩnh còn giúp tăng tốc độ tải website, download file torrent. IP tĩnh giữ đường truyền ổn định với máy tính nằm trong hệ thống mạng nội bộ.
+
+Bất lợi lớn của IP tĩnh chính là cấu hình thủ công. Mọi thiết bị đều yêu cầu thiết lập địa chỉ IP tĩnh và cấu hình đúng router để giao tiếp với thiết bị đó. Điều này gây mất rất nhiều thời gian cho bạn khi thiết lập.
+
+* Cách đổi IP tĩnh sang động:
+
+  - Bước 1: Bạn click chuột phải vào biểu tượng Network, chọn Properties. Hoặc bạn click phải chuột vào biểu tượng mạng ở góc phải bên dưới màn hình, và chọn Open Network and Sharing Center.
+  - Bước 2: Chọn mục Change adapter setting.
+  - Bước 3: Chọn tiếp Wireless network connection, sau đó chọn Properties.
+  - Bước 4: Chọn Local area connection để đổi địa chỉ IP.
+  - Bước 5: Click chuột 2 lần vào Internet protocol version 4.
+  - Bước 6: Click chọn Obtain an IP address automatically. Lúc này, IP đã được chuyển từ chế độ tĩnh sang động.
+  - Bước 7: Nhấn chọn OK 2 lần để hoàn tất.
