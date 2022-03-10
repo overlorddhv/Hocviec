@@ -87,6 +87,7 @@ Tùy thuộc vào nhu cầu sử dụng cũng như mục đích kinh doanh mà k
 **5. Vì sao nên mua hoặc thuê Hosting và cần quan tâm đến các thông số nào?**\
 **5.1. Vì sao nên mua/thuê Hosting?**\
 Trong thiết kế và xây dựng web không thể thiếu hosting bởi nếu không có hosting website của bạn chỉ có thể hoạt động trên máy tính và chỉ có bạn mới nhìn thấy thông tin, dữ liệu. Việc thuê hoặc mua hosting sẽ giúp thông tin trên website của bạn được chia sẻ rộng rãi trên mạng và khách hàng có thể cùng xem từ đó phục vụ tối đa nhu cầu công việc. Đưa sản phẩm, thương hiệu của bạn đến gần hơn với khách hàng.
+
 **5.2. Khi mua hosting bạn cần quan tâm đến các thông số nào?**\
 Bên cạnh việc hiểu rõ hosting là gì thì nắm vững các thông số cơ bản để mua hosting tốt nhất cũng là điều mà bạn cần quan tâm. Để lựa chọn hosting phù hợp nhất với website, bạn cần lưu ý một số vấn đề sau:
 * Ổ cứng HDD và SSD
