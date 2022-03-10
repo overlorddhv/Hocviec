@@ -57,3 +57,13 @@ Bất lợi lớn của IP tĩnh chính là cấu hình thủ công. Mọi thi�
   - Bước 5: Click chuột 2 lần vào Internet protocol version 4.
   - Bước 6: Click chọn Obtain an IP address automatically. Lúc này, IP đã được chuyển từ chế độ tĩnh sang động.
   - Bước 7: Nhấn chọn OK 2 lần để hoàn tất.
+
+**4.4. IP Động**
+
+Đây là địa chỉ IP được gán tự động cho mỗi kết nối hay node của mạng. IP động sẽ do máy chủ DHCP tùy chỉnh.
+
+Ưu điểm của IP động là tính linh hoạt cao, dễ cài đặt và quản lý. Bên cạnh đó, nó cũng không giới hạn số lượng thiết bị kết nối. Bởi các thiết bị này không cần ngắt kết nối để giải phóng IP khi có thiết bị mới truy cập.
+
+Vì những lợi thế vượt trội trên mà IP động được sử dụng rộng rãi. Tuy nhiên, IP động vẫn tồn tại nhược điểm là sẽ xảy ra xung đột IP trong cùng hệ thống mạng, do địa chỉ được tự động thay đổi định kỳ.
+
+IP động hoạt động ngược lại so với IP tĩnh bằng cách sử dụng phương thức DHCP. Việc gán địa chỉ IP tự động này được thực hiện bằng giao thức DHCP và luôn được thay đổi mỗi khi bạn ngắt và kết nối lại (DHCP viết tắt của Dynamic Host Configuration Protocol, là giao thức tự động cấp phát địa chỉ IP đến các thiết bị trong mạng. Các địa chỉ IP được cung cấp từ giao thức DHCP sẽ cho phép chúng ta truy cập vào internet).
