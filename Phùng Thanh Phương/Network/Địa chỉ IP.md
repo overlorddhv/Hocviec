@@ -68,14 +68,14 @@ IP động hoạt động ngược lại so với IP tĩnh bằng cách sử d�
 
 Vì những lợi thế vượt trội trên mà IP động được sử dụng rộng rãi. Tuy nhiên, IP động vẫn tồn tại nhược điểm là sẽ xảy ra xung đột IP trong cùng hệ thống mạng, do địa chỉ được tự động thay đổi định kỳ.
 
-**4.5. IPv4 và IPv6**
-**4.5.1. IPv4**
+**5. IPv4 và IPv6**
+**5.1. IPv4**
 
 IPv4 (Internet Protocol version 4) là một giao thức phổ biến trong truyền thông dữ liệu. Nó được phát triển như một giao thức không hướng kết nối (connectionless). Dùng trong các mạng chuyển mạch gói (network packet switching) như Ethernet. Nó có nhiệm vụ cung cấp kết nối logic giữa các thiết bị mạng. Trong đó bao gồm cả việc cung cấp nhận dạng cho các thiết bị.
 
 IPv4 dựa trên mô hình best-effort, đảm bảo không phân phối hoặc tránh phân phối trùng lặp. IPv4 rất linh hoạt, có thể cấu hình tự động hay thủ công với nhiều thiết bị khác nhau, tùy vào từng loại mạng khác nhau.
 
-**4.5.2. IPv6**
+**5.2. IPv6**
 
 IPv6 (Internet Protocol version 6) là “Giao thức liên mạng thế hệ 6”. Đây là một phiên bản của giao thức liên mạng (IP) nhằm mục đích nâng cấp giao thức liên mạng phiên bản 4 (IPv4) hiện đang truyền dẫn cho hầu hết lưu lượng truy cập Internet nhưng đã hết địa chỉ.
 
@@ -87,7 +87,7 @@ Rõ ràng, nó lớn hơn rất nhiều so với IPv4 vì được tạo nên b�
 
 Một ví dụ đơn giản về khả năng vượt trội của IPv6 so với IPv4 là việc nó không cần phải chia sẻ địa chỉ IP và nhận một địa chỉ riêng biệt cho các thiết bị. Việc sử dụng IPv4 đồng nghĩa với việc một nhóm các máy tính muốn dùng chung một địa chỉ IP công cộng sẽ phải dùng đến NAT. Sau đó là vấn đề truy cập trực tiếp vào một trong số chúng. Bạn sẽ cần thiết lập các cấu hình phức tạp. Có thể gồm chuyển tiếp, thay đổi tường lửa…Đối với IPv6, sẽ có nhiều địa chỉ để sử dụng hơn. Do đó, các máy tính sử dụng IPv6 có thể truy cập công khai mà không cần cấu hình bổ sung, tiết kiệm được tài nguyên.
 
-**4.5.3. IPv6 khác với IPv4 như thế nào?**
+**5.3. IPv6 khác với IPv4 như thế nào?**
 
 IPv4 và IPv6 là các phiên bản của giao thức Internet. Trong đó, IPv4 là phiên bản cũ có độ dài địa chỉ là 32 bit và tạo ra 4.29 x 10^9 địa chỉ mạng duy nhất. IPv6 là phiên bản nâng cao được phát triển sau này, có độ dài địa chỉ là 128 bit và tạo ra 3,4 x 10^38 địa chỉ.
 
@@ -97,3 +97,29 @@ IPv6 hỗ trợ lên tới 2128 tổ hợp khả thi của các node hay địa 
  * So sánh IPv4 với IPv6
 
 ![image](https://user-images.githubusercontent.com/48250210/157612703-c8105272-07f0-43c3-8f07-975eb4437631.png)
+
+**6. Subnet Mask**
+
+Subnet mask là khái niệm dùng để chỉ sự phân chia các địa chỉ TCP/IP một cách khoa học, logic. Quá trình phân chia mạng thành nhiều nhánh con được gọi là quá trình subnetting. 
+
+Giải thích chi tiết hơn thì Subnet mask là dãy số 32 bit hay 128 bit. Đây là dãy số phân chia đoạn địa chỉ IP đang tồn tại trên mạng TCP/IP. Trong thực tế, cũng có khi, người ta còn sử dụng Subnet mask để phân chia IP thành địa chỉ Network và địa chỉ Host riêng. Quá trình này được thực hiện để chia Host của địa chỉ IP thành nhiều phần phụ khác nhau. 
+
+Ví dụ: Địa chỉ Ipv4 có dạng 192.168.1.1 và subnet mask 255.255.255.0.
+
+Trong ví dụ này, bạn sẽ thấy 3 phân đoạn đầu của địa chỉ là thuộc về network, còn phân đoạn cuối được chỉ định cho các máy chủ chạy trong mạng con IPV4.
+
+Subnet mask có vai trò quan trọng khi dãy địa chỉ IP đơn được phân thành nhiều phân đoạn trong cùng mạng nội bộ (LAN). Cũng giống Ipv4, một subnet Ipv4 sẽ chứa 4 byte (32 bit). Chúng được viết bằng việc dùng cùng một ký tự góc phần tư kết hợp với dấu chấm thập phân. Với phương thức Ipv4, chuỗi 8 số nhị phân được chuyển thành số thập phân 255.
+
+Thông qua Subnet mask, các tổ chức dễ dàng chia nhỏ địa chỉ IP một cách công khai mà không cần lấy số IP mới từ ISP. Vì thế, Subnet mask giúp tăng số lượng địa chỉ IP, nâng cao hiệu suất và bảo mật cho network. Từ đó, doanh nghiệp có thể sử dụng một subnet mask để chọn số lượng subnet khởi tạo, hay chọn số lượng node mạng trên từng mạng con thông qua việc đặt toàn bộ bit mạng nối tiếp là "1", còn bit máy chủ là "0".
+
+![image](https://user-images.githubusercontent.com/48250210/157614452-181debfb-e25e-48bc-ba38-c1eba82474a0.png)
+
+Trong trường hợp công ty bạn yêu cầu một số lượng lớn truy cập mạng LAN thì đòi hỏi cấu trúc mạng phải có khả năng đảm bảo được tất cả hàng ngàn thiết bị kết nối đó. Trên lý thuyết thì cấu trúc mạng của công ty có thể kết nối tối đa đạt được mục đích sử dụng nhưng trong thực tế cấu trúc mạng hiện nay thường bị giới hạn về số máy được kết nối nên kết quả sẽ trả lại thấp hơn mong muốn. Đồng thời, nhiều thiết bị kết nối chung cùng một mạng khiến hệ thống quản trị trở nên khó khăn hơn. Từ nhược điểm này Subnet mask ra đời, khắc phục nhược điểm đó. 
+
+Khi dùng giải pháp phân chia mạng hệ thống, doanh nghiệp sẽ xác định được mạng riêng sử dụng cho công ty. Sau đó, mạng này được phân nhỏ thành nhiều mạng con có riêng địa chỉ IP. Điều này giúp cho cấu trúc mạng đạt tối đa khả năng kết nối.
+
+* Lợi ích khi chia Subnet mask là gì?
+  - Nhờ hạn chế quá trình giao vận các thông tin quảng bá nên CPU được “giải phóng” thời gian làm việc, tức giảm thiểu được thời gian xử lý các vấn đề này.
+  - Phạm vi sử dụng đa dạng. Cụ thể, cho phép từng mạng con có thể làm việc trên mỗi cấu hình riêng mà không cần lệ thuộc vào mạng LAN.
+  - Giảm tắc nghẽn mạng bằng việc tái định hướng quá trình giao vận và hạn chế phạm vi hoạt động của các thông tin quảng cáo.
+  - Giúp hệ thống mạng LAN chung hoạt động hiệu quả, hầu như không có thời gian downtime. Bởi khi có bất kỳ sự cố hay lỗi của mạng con thì người quản trị dễ dàng khắc phục và không làm ảnh hưởng đến hệ thống mạng chung.
