@@ -75,7 +75,7 @@ IPv4 (Internet Protocol version 4) là một giao thức phổ biến trong truy
 
 IPv4 dựa trên mô hình best-effort, đảm bảo không phân phối hoặc tránh phân phối trùng lặp. IPv4 rất linh hoạt, có thể cấu hình tự động hay thủ công với nhiều thiết bị khác nhau, tùy vào từng loại mạng khác nhau.
 
-**4.5.1. IPv6**
+**4.5.2. IPv6**
 
 IPv6 (Internet Protocol version 6) là “Giao thức liên mạng thế hệ 6”. Đây là một phiên bản của giao thức liên mạng (IP) nhằm mục đích nâng cấp giao thức liên mạng phiên bản 4 (IPv4) hiện đang truyền dẫn cho hầu hết lưu lượng truy cập Internet nhưng đã hết địa chỉ.
 
@@ -86,3 +86,14 @@ IPv6 đã bù đắp được mọi lỗ hổng trong kỹ thuật ở IPv4. Vi�
 Rõ ràng, nó lớn hơn rất nhiều so với IPv4 vì được tạo nên bởi 16 bit. Đây là lý do để các mạng nên bắt đầu sử dụng IPv6 ngay từ lúc này. Tuy nhiên, việc thực hiện việc đó đến nay vẫn chưa dễ dàng. Các nhà triển khai mạng đã quen với IPv4, và cũng chưa có động thái rõ ràng về cách tiếp cận với IPv6. Nhiều người cho rằng IPv4 vẫn tốt cho tương lai gần. Nhưng rõ ràng là việc sử dụng IPv4 chỉ càng làm cho số lượng của nó giảm đi mà thôi.
 
 Một ví dụ đơn giản về khả năng vượt trội của IPv6 so với IPv4 là việc nó không cần phải chia sẻ địa chỉ IP và nhận một địa chỉ riêng biệt cho các thiết bị. Việc sử dụng IPv4 đồng nghĩa với việc một nhóm các máy tính muốn dùng chung một địa chỉ IP công cộng sẽ phải dùng đến NAT. Sau đó là vấn đề truy cập trực tiếp vào một trong số chúng. Bạn sẽ cần thiết lập các cấu hình phức tạp. Có thể gồm chuyển tiếp, thay đổi tường lửa…Đối với IPv6, sẽ có nhiều địa chỉ để sử dụng hơn. Do đó, các máy tính sử dụng IPv6 có thể truy cập công khai mà không cần cấu hình bổ sung, tiết kiệm được tài nguyên.
+
+**4.5.3. IPv6 khác với IPv4 như thế nào?**
+
+IPv4 và IPv6 là các phiên bản của giao thức Internet. Trong đó, IPv4 là phiên bản cũ có độ dài địa chỉ là 32 bit và tạo ra 4.29 x 10^9 địa chỉ mạng duy nhất. IPv6 là phiên bản nâng cao được phát triển sau này, có độ dài địa chỉ là 128 bit và tạo ra 3,4 x 10^38 địa chỉ.
+
+IPv6 (Internet Protocol version 6) là giao thức mạng mới nhất hiện nay. Nó có chức năng truyền dữ liệu trong các gói từ một nguồn đến đích qua các mạng khác nhau. IPv6 được đánh giá là một phiên bản cải tiến của IPv4. Nó hỗ trợ một số lượng node lớn hơn đáng kể so với phiên bản tiền nhiệm của nó.
+
+IPv6 hỗ trợ lên tới 2128 tổ hợp khả thi của các node hay địa chỉ. Nó còn được gọi là Giao thức Internet Thế hệ tiếp theo (Internet Protocol Next Generation – IPnG). Ban đầu IPv6 được phát triển với định dạng thập lục phân, chứa tám octet để cung cấp khả năng mở rộng khác nhau. Được phát hành vào 6/6/2012, nó cũng được thiết kế để xử lý việc broadcast địa chỉ mà không bao gồm các địa chỉ broadcast trong bất kỳ lớp nào.
+ * So sánh IPv4 với IPv6
+
+![image](https://user-images.githubusercontent.com/48250210/157612703-c8105272-07f0-43c3-8f07-975eb4437631.png)
