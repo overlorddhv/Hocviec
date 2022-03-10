@@ -1,4 +1,4 @@
-# 1. IP là gì?
+**1. IP là gì?**
 
 Địa chỉ IP (Internet Protocol) là một địa chỉ đơn nhất mà các thiết bị kết nối mạng có thể chia sẻ dữ liệu với nhau thông qua kết nối internet. Các thiết bị cứng trong mạng chỉ có thể kết nối và giao tiếp với nhau khi có địa chỉ IP.
 
@@ -10,13 +10,13 @@ IP sẽ giúp các thiết bị trên mạng Internet có thể phân biệt, ch
 
 Ví dụ, khi tôi muốn gửi một lá thư tay đến cho một người bạn ở nước ngoài. Lúc này, tôi sẽ cần địa chỉ chính xác của họ và số điện thoại để tra cứu, truy xuất. Đây cũng là quy trình chung khi gửi dữ liệu qua Internet, tuy nhiên nó sẽ hoàn toàn tự động. Thay vì dùng số điện thoại thì máy tính sẽ dùng DNS Server để tra cứu đích đến và IP.
 
-* Ưu và nhược điểm của địa chỉ IP là gì?
+**2. Ưu và nhược điểm của địa chỉ IP là gì?**
 
 IP là giao thức kết nối thông minh giúp truy cập mạng lưới internet dễ dàng hơn. Đồng thời IP giúp quản lý hệ thống mạng của người dùng đơn giản hơn. Mỗi máy tính, thiết bị đều có một địa chỉ IP riêng biệt.
 
 IP tuy có nhiều ưu điểm, song cũng tồn tại những nhược điểm. Trong đó, người dùng sẽ dễ dàng bị khai thác các thông tin cá nhân thông qua địa chỉ IP nếu bị hacker xâm nhập. Ngoài ra, mọi hoạt động truy cập của người dùng đều sẽ bị để lại địa chỉ IP.
 
-* Cấu tạo của địa chỉ IP
+**3. Cấu tạo của địa chỉ IP**
 
 Người ta phân địa chỉ IP ra làm 5 lớp phân biệt (class):
 
@@ -25,3 +25,21 @@ Người ta phân địa chỉ IP ra làm 5 lớp phân biệt (class):
   + Lớp C: Lớp này gồm các địa chỉ IP có oc-tet đầu tiên có giá trị từ 192-223. Lớp C được sử dụng trong các tổ chức nhỏ. Trong đó có cả máy tính cá nhân. Lớp C có địa chỉ từ 192.0.1.0 đến 223.255.254.0
   + Lớp D: Lớp này gồm các địa chỉ IP có oc-tet đầu tiên có giá trị từ 224-239. Lớp D có 4 bit đầu tiên luôn là 1110. Đặc biệt lớp D được dành cho phát các thông tin (multicast/broadcast). Lớp này sẽ có địa chỉ từ 224.0.0.0 đến 239.255.255.255
   + Lớp E: Lớp này gồm các địa chỉ IP có oc-tet đầu tiên có giá trị từ 240-255. Lớp E có 4 bit đầu tiên luôn là 1111. Lớp E được dành riêng cho việc nhiên cứu. Nó sẽ có địa chỉ từ 240.0.0.0 đến 254.255.255.255
+
+**4. Phân loại IP**
+
+**4.1. IP Private**
+
+IP private còn được gọi là IP nội bộ. Đây là dãy các IP chỉ được sử dụng cho những máy tính thuộc một mạng nội bộ như mạng nhà trường, công ty, tổ chức…
+
+IP Private hỗ trợ các máy tính trong hệ thống kết nối với nhau. Chúng sẽ không kết nối trực tiếp với các máy tính bên ngoài hệ thống. IP Private được thiết lập thủ công hoặc do router thiết lập tự động.
+
+**4.2. IP Public**
+
+IP Public là địa chỉ IP cộng đồng. Đây là IP sử dụng trong mạng gia đình hoặc doanh nghiệp để kết nối Internet.
+
+Địa chỉ IP Public là yếu tố thiết yếu với bất kỳ phần cứng mạng có thể truy cập công khai nào. Ví dụ như router gia đình hoặc các server. Các thông số của IP Public cần được ghi nhớ chính xác. Đặc biệt khi thuê máy chủ để thiết lập kết nối chính xác cho website của mình.
+
+**4.3. IP Tĩnh**
+
+IP này là địa chỉ được cấu hình thủ công cho các thiết bị kết nối mạng. Nó được gọi là IP tĩnh do tính chất cố định và không thể thay đổi. Các thiết bị phải được cấu hình đúng với router để chúng có thể giao tiếp. Điều này cũng là nhược điểm của IP tĩnh. Vì vậy, một số người dùng đã thực hiện chuyển IP từ tĩnh sang động.
