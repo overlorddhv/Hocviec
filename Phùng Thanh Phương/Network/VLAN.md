@@ -82,4 +82,15 @@ Nhiều hệ thống mạng mà cần có sự di chuyển tới những nơi t�
 
 Vị trí địa lý có thể rộng như toàn bộ một tòa nhà, hoặc cũng có thể nhỏ như một switch trong một wiring closet (tủ dây điện). Trong một số cấu trúc VLAN cục bộ, đó là một cách để tìm ra nguyên tắc 20/80 trong hiệu quả với 80% của thông lượng truy cập từ xa và 20% thông lượng hiện thời tới user. Điều này trái ngược với End-to-End VLAN. Mặc dù hình thái mạng này user phải đi qua thiết bị lớp 3 để đạt được 80% tài nguyên khai thác. Thiết kế này cho phép cung cấp cho một dự định, một phương thức chắc chắn của việc xác nhận tài nguyên.
 
-**4.4. 
+**4.4. Nhận dạng VLAN Frame
+
+![image](https://user-images.githubusercontent.com/48250210/157790183-0d08cdc8-3a92-455d-b1ef-e0efe1e68822.png)
+
+Với các VLAN sử dụng nhiều switch, frame header được đóng gói hoặc sử dụng lại để phản hồi một VLAN Id trước khi Frame được gửi đi vào nốt kết giữa các switch. Trước khi chuyển gói tin đến điểm cuối, Frame header được thay đổi trở lại với định dạng ban đầu. VLAN nhận dạng bằng cách: gói tin nào thì thuộc VLAN đó. Phương thức đa mạch nối (Multiple trunking) tồn tại, bao gồm IEEE 802.1q, ISL, 802.10 và LANE.
+
+**4.4.1. IEEE 802.1q: Frame tagging
+
+Giao thức này như là một phương thức chuẩn của IEEE để dành cho việc nhận dạng các VLAN bằng cách thêm vào Frame header đặc điểm của một VLAN. Phương thức này còn được gọi là gắn thẻ cho Frame (Frame tagging).
+
+![image](https://user-images.githubusercontent.com/48250210/157791043-2eb28dc8-d728-4470-ac8a-104614621633.png)
+
