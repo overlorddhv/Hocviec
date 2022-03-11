@@ -30,3 +30,36 @@ Có 3 loại VLAN, bao gồm:
 * Dễ dàng thêm/bớt máy tính vào VLAN: việc thêm một máy tính vào  VLAN rất đơn giản, chỉ cần cấu hình cổng cho máy đó vào VLAN mong muốn
 * Giúp mạng có tính linh động cao: VLAN có thể dễ dàng di chuyển thiết bị. Giả sử trong ví dụ trên, sau một thời gian sử dụng, công ty quyết định để mỗi bộ phận một tầng riêng biệt. Với VLAN, ta chỉ cần cấu hình lại các cổng switch rồi đặt chúng vào VLAN theo yêu cầu. 
 VLAN có thể được cấu hình tĩnh hay động. Trong cấu hình tĩnh, người quản trị mạng phải cấu hình cho từng cổng của mỗi switch. Sau đó, gán cho nó vào một VLAN nào đó. Trong cấu hình động, mỗi cổng của switch có thể tự cấu hình VLAN cho mình dựa trên địa chỉ MAC của thiết bị đã kết nối vào.
+
+**4. Cấu trúc hoạt động của VLAN**
+
+Cấu trúc của một mạng các VLAN gồm 3 tầng thiết bị như sau
+* Tầng 1: là router làm nhiệm vụ định tuyến giữa các VLAN
+* Tầng 2: là các switch. trên các cổng của mỗi switch chia thành các VLAN
+* Tầng 3: là các workstation
+
+Ký hiệu T: là đường Trunk
+
+![image](https://user-images.githubusercontent.com/48250210/157784138-93b8f570-38e3-4c4e-a226-d0c4432aee1a.png)
+
+**4.1. Cách thức tạo lập VLAN
+
+Mỗi một cổng trên switch có thể chia cho một VLAN. Những cổng được chia sẻ cho cùng một VLAN thì chia sẻ broadcast. Cổng nào không thuộc VLAN thì sẽ không chia sẻ broadcast. Những cải tiến của VLAN là làm giảm bớt broadcast và sự lãng phí băng thông.
+
+Có 2 phương thức để tạo lập VLAN:
+- VLAN tĩnh (static VLAN)
+- VLAN động (dynamic VLAN)
+
+**4.1.1. Static VLAN
+
+Phương thức này được ám chỉ như là port-base membership. Việc gán các cổng switch vào một VLAN là đã tạo một static VLAN. Giống như một thiết bị được kết nối  vào mạng, nó tự động thừa nhận VLAN của cổng đó. Nếu user thay đổi các cổng và cần truy cập vào cùng một VLAN thì người quản trị mạng cần phải khai báo cổng tới VLAN cho kết nối tới.
+
+**4.1.2. Dynamic VLAN
+
+VLAN được tạo thông qua việc sử dụng các phần mềm như Ciscowork 2000. Với một VMMPS (VLAN Management Policy Server) có thể đăng ký các cổng của switch vào các VLAN một cách tự động dựa trên địa chỉ MAC nguồn của thiết bị được nối vào cổng. Dynamic VLAN hiện thời tính đến thành viên của nó dựa trên địa chỉ MAC của thiết bị. Như một thiết bị trong mạng, nó truy vấn một cơ sở dữ liệu trên VMPS của các VLAN thành viên.
+
+Trên switch cổng được gán cho một VLAN cụ thể thì độc lập với user hoặc hệ thống gắn với cổng đó. CÓ nghĩa là tất cả các user nằm trên các cổng nên là thành viên của cùng 1 VLAN. Một workstation hay một hub có thể kết nối vào một cổng VLAN. người quản trị mạng thực hiện gán các VLAN. Cổng mà được cấu hình là static thì không thể thay đổi  một cách tự động tới VLAN khác khu mà cấu hình lại switch.
+
+Khi các user gắn với cùng một phân đoạn mạng chia sẻ, tất cả các user đó cùng chia sẻ băng thông của phân đoạn mạng. Mỗi một user được gắn vào môi trường chia sẻ, tất cả các user đó cùng chia sẻ băng thông của phân đoạn mạng. Mỗi một user được gắn vào môi trường chia sẻ, thì sẽ có ít băng thông sẵn có cho mỗi user, bởi tất cả các user đều nằm trên một miền xung đột. Nếu chia sẻ trở nên quá lớn, xung đột có thể xảy rả quá mức và các trình ứng dụng có thể bị mất chất lượng.
+
+Các switch làm giảm xung đột bằng cách cung cấp băng thông giữa các thiết bị sử dụng Micro segmentation (vi phân đoạn), tuy nhiên các switch chỉ chuyển các gói tịn dạng ARP ( Address Resolution Protocol - Giao thức độ phân giải địa chỉ
