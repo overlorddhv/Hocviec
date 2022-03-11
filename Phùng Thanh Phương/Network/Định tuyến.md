@@ -69,3 +69,8 @@ Trong một mạng rất lớn có rất nhiều bộ định tuyến như mạn
 * Tính toán và chọn tuyến đường đi tốt nhất đến đích.
 * Nếu tuyến đường chuyển thông tin chính bị lỗi, tự tính toán và đưa ra tuyến đường chuyển thông tin backup.
 
+Phân loại định tuyến động:
+* Exterior Gateway Protocols: có giao thức BGP
+* Interior Gateway Protocols: Distance Vector Protocols và Link- State Protocols.
+ * Giao thức Distance Vector: có giao thức RIPv1, RIPv2 và IGRP, EIGRP.
+ * Giao thức Link- State: có giao thức OSPF và IS-IS
