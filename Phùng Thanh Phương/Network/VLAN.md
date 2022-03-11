@@ -94,3 +94,15 @@ Giao thức này như là một phương thức chuẩn của IEEE để dành c
 
 ![image](https://user-images.githubusercontent.com/48250210/157791043-2eb28dc8-d728-4470-ac8a-104614621633.png)
 
+Trong hình minh họa một định dạng Frame 802.1q với VLAN Id. mỗi một cổng 802.1q được gán cho một đường trunk và tất cả các cổng trên đường trunk để ở trong một Native VLAN. Mỗi cổng 802.1q được gán một giá trị nhận dạng đó là native VLAN Id (mặc định là VLAN 1). Tất cả các frame không được gắn thẻ được gán vào trong LAN cái mà theo lý thuyết là nằm trong tham số Id. Một đường trunk 802.1q được kết hợp các cổng trunk có một giá trị Native VLAN. Tuy nhiên các trạm làm việc thông thường có thể đọc được các Native Frame không gắn thẻ nhưng lại đọc được các Frame được gắn thẻ. IEEE 802.1q Frame tagging đã đưa ra một phương truyền thông VLAN giữa các switch.
+
+**4.4.2. Inter-Switch Link Protocol
+
+ISL là một giao thức đóng gói của Cisco. Giao thức này dùng để đa liên kết các hệ thống đa switch, nó được hỗ trợ, tương thích trên switch cũng tốt như router.
+
+![image](https://user-images.githubusercontent.com/48250210/157794971-6927cd95-ce87-4dce-b591-70d2a6378dcb.png)
+
+Dòng switch Castalyst sử dụng ISL frame tagging là một kỹ thuật có độ trễ thấp, dùng cho việc dồn kênh từ nhiều VLAN trên một đường dây vật lý. ISL được thực thi cho kết nối giữa switch, router và NIC sử dụng trên các node như server. Để hỗ trợ chức năng ISL, các thiết bị kết nối phải được cấu hình ISL.
+
+**4.5. Các kiểu VLAN
+
