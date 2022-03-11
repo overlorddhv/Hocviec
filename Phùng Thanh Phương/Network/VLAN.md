@@ -62,4 +62,24 @@ Trên switch cổng được gán cho một VLAN cụ thể thì độc lập v�
 
 Khi các user gắn với cùng một phân đoạn mạng chia sẻ, tất cả các user đó cùng chia sẻ băng thông của phân đoạn mạng. Mỗi một user được gắn vào môi trường chia sẻ, tất cả các user đó cùng chia sẻ băng thông của phân đoạn mạng. Mỗi một user được gắn vào môi trường chia sẻ, thì sẽ có ít băng thông sẵn có cho mỗi user, bởi tất cả các user đều nằm trên một miền xung đột. Nếu chia sẻ trở nên quá lớn, xung đột có thể xảy rả quá mức và các trình ứng dụng có thể bị mất chất lượng.
 
-Các switch làm giảm xung đột bằng cách cung cấp băng thông giữa các thiết bị sử dụng Micro segmentation (vi phân đoạn), tuy nhiên các switch chỉ chuyển các gói tịn dạng ARP ( Address Resolution Protocol - Giao thức độ phân giải địa chỉ
+Các switch làm giảm xung đột bằng cách cung cấp băng thông giữa các thiết bị sử dụng Micro segmentation (vi phân đoạn), tuy nhiên các switch chỉ chuyển các gói tịn dạng ARP ( Address Resolution Protocol - Giao thức độ phân giải địa chỉ). VLAN đưa ra nhiều băng thông hơn cho user trong một mạng chia sẻ bằng cách hạn chế miền quảng bá cụ thể.
+
+VLAN mặc định cho tất cả các cổng trên switch là VLAN1 hoặc management VLAN. VLAN mặc định không thể xóa, tuy nhiên các VLAN thêm vào có thể tạo ra và các cổng có thể gán lại tới các VLAN xen kẽ. Mỗi một cổng giao diện trên switch giống như cổng của bridge và switch đơn giản là một bridge nhiều cổng. Các bridge lọc tải mạng mà không cần quan tâm đến phân đoạn mạng nguồn mà chỉ cần quan tâm đến phân đoạn mạng đích. Nếu một frame cần chuyển qua bridge, và địa chỉ MAC đích là biết được, thì bridge sẽ chuyển frame tới cổng giao diện chính xác. Nếu bridge hoặc switch không biết đích đến, nó sẽ chuyển gói tin qua tất cả các cổng trong vùng quảng bá (VLAN) trừ cổng nguồn. Mỗi một VLAN nên có một địa chỉ lớp 3 duy nhất hoặc địa chỉ subnet được đăng ký. Điều đó giúp router chuyển mạch gói giữa các VLAN. Các VLAN có thể tồn tại như các mạng end-to-end
+
+**4.2. End-to-End VLAN (VLAN đầu cuối)
+
+Các End-to-End VLAN cho phép các thiết bị trong một nhóm sử dụng chung tài nguyên. Bao gồm các thông số như server lưu trữ, nhóm dự án và các phòng ban. Mục đích của các End-to-End VLAN là duy trì 80% thông lượng trên VLAN hiện thời. Một End-to-End VLAN có các đặc điểm sau:
+* Các user được nhóm vào các VLAN độc lập về vị trí vật lý nhưng lại phụ thuộc vào nhóm chức năng hoặc đặc thù công việc.
+* Tất cả các user trong một VLAN nên có cùng kiểu truyền dữ liệu 80/20 (80% băng thông cho VLAN và 20% băng thông cho các truy cập từ xa).
+* Như một user di chuyển trong một khuôn viên mạng, VLAN dành cho user đó không nên thay đổi.
+* Mỗi VLAN có những bảo mật riêng cho từng thành viên. 
+
+Như vật, trong End-to-End VLAN, các user sẽ được nhóm vào thành những nhóm dựa trên chức năng, theo nhóm dự án hoặc theo cách mà những người dùng đó sử dụng tài nguyên mạng
+
+**4.3. Geographic VLANs ( các VLAN cục bộ)
+
+Nhiều hệ thống mạng mà cần có sự di chuyển tới những nơi tập trung tài nguyên, End-to-End VLAN trở nên khó duy trì. Những user yêu cầu sử dụng nhiều nguồn tài nguyên khác nhau, nhiều trong số đó không còn ở trong VLAN của chúng nữa. Bởi sự thay đổi về địa điểm và cách sử dụng tài nguyên. Các VLAN được tạo ra xung quanh các giới hạn địa lý hơn là giới hạn thông thường.
+
+Vị trí địa lý có thể rộng như toàn bộ một tòa nhà, hoặc cũng có thể nhỏ như một switch trong một wiring closet (tủ dây điện). Trong một số cấu trúc VLAN cục bộ, đó là một cách để tìm ra nguyên tắc 20/80 trong hiệu quả với 80% của thông lượng truy cập từ xa và 20% thông lượng hiện thời tới user. Điều này trái ngược với End-to-End VLAN. Mặc dù hình thái mạng này user phải đi qua thiết bị lớp 3 để đạt được 80% tài nguyên khai thác. Thiết kế này cho phép cung cấp cho một dự định, một phương thức chắc chắn của việc xác nhận tài nguyên.
+
+**4.4. 
