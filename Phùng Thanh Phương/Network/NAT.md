@@ -82,7 +82,7 @@ Router (config-if) # ip nat inside
 
 Router (config-if) # ip nat outside
 
-**5.3. NAT Overload
+**5.3. NAT Overload**
 
 NAT Overload hay còn gọi là PAT (Port Address Translation). Nó chính là một dạng biến thể của Dynamic NAT. Vì thế, NAT Overload có khả năng thực hiện chuyển đổi địa chỉ IP tự động nhưng là chuyển đổi nhiều địa chỉ IP thành một IP, tức là dạng many to one. Đồng thời, nó sử dụng nhiều chỉ số port để phân biệt từng chuyển đổi.  
 
