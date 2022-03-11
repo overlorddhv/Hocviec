@@ -81,3 +81,25 @@ Router (config-if) # ip nat inside
 - Bước 5: Bạn tiếp tục thiết lập cổng kết nối mạng bên ngoài theo cú pháp:
 
 Router (config-if) # ip nat outside
+
+**5.3. NAT Overload
+
+NAT Overload hay còn gọi là PAT (Port Address Translation). Nó chính là một dạng biến thể của Dynamic NAT. Vì thế, NAT Overload có khả năng thực hiện chuyển đổi địa chỉ IP tự động nhưng là chuyển đổi nhiều địa chỉ IP thành một IP, tức là dạng many to one. Đồng thời, nó sử dụng nhiều chỉ số port để phân biệt từng chuyển đổi.  
+
+Cách cấu hình NAT Overload:
+
+- Bước 1: Bạn xác định những địa chỉ IP mạng nội bộ cần ánh xạ theo cú pháp:
+
+Router (config) # access-list <ACL-number> permit <source> <wildcard>
+
+- Bước 2: Bạn thực hiện cấu hình để chuyển IP đến cổng kết nối mạng bên ngoài theo cú pháp:
+
+Router (config) # ip nat inside source list <ACL-number> interface <interface> overload
+
+- Bước 3: Bạn thiết lập các cổng kết nối mạng bên trong theo cú pháp:
+
+Router (config-if) # ip nat inside
+
+- Bước 4: Bạn thiết lập các cổng kết nối mạng bên ngoài theo cú pháp:
+
+Router (config-if) # ip nat outside
