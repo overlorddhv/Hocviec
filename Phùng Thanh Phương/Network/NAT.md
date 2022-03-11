@@ -34,3 +34,50 @@ Song song với ưu điểm, NAT vẫn tồn tại một vài hạn chế như:
 * Các kỹ thuật viên khó khăn trong việc kiểm tra nguồn gốc địa chỉ IP do NAT đã che giấu chúng. Thậm chí, họ cũng gặp không ít trở ngại khi tìm dấu viết của các gói tin.
 * Vì khả năng giấu địa chỉ IP của NAT nên ngăn cản hoạt động của một số ứng dụng bắt buộc phải dùng IP.
 
+**5. Phân loại NAT**
+
+**5.1. Static NAT**
+
+Đây là kỹ thuật được dùng để thay đổi, biến địa chỉ IP này thành địa chỉ IP khác, thông qua việc dùng một phương pháp cụ thể và cố định từ IP cục bộ sang IP Public. Tất cả quá trình này sẽ được thực hiện thủ công.
+
+Static NAT cực kỳ hiệu quả nếu sử dụng các thiết bị có IP cố định để truy cập internet bên ngoài.
+
+Cách cấu hình NAT như sau:
+
+- Bước 1: Bạn thiết lập mối quan hệ để thực hiện chuyển đổi địa chỉ IP cục bộ và IP Public theo cú pháp:
+
+Router (config) # ip nat inside source static [local ip] [global ip]
+
+- Bước 2: Bạn tiến hành thiết lập cổng kết nối mạng nội bộ theo cú pháp:
+
+Router (config-if) # ip nat inside
+
+- Bước 3: Bạn thực hiện thiết lập cổng kết nối mạng bên ngoài theo cú pháp:
+
+Router (config-if) # ip nat outside
+
+**5.2. Dynamic NAT**
+
+Kỹ thuật này được dùng để thực hiện ánh xạ tự động một địa chỉ IP sang địa chỉ IP khác (còn được gọi là (one to one)). Thông thường, nó sẽ chuyển IP mạng cục bộ sang IP đã được đăng ký hợp lệ.
+
+Cách cấu hình NAT như sau:
+
+- Bước 1: Bạn thiết lập IP của mạng bên ngoài theo cú pháp:
+
+Router (config) # ip nat pool [name start ip] [name end ip] netmask [netmask]/prefix-lenght [prefix-lenght]
+
+- Bước 2: Tiến hành tạo ACL để thiết lập danh sách địa chỉ IP mạng cục bộ có thể được chuyển đổi IP theo cú pháp:
+
+Router (config) # access-list [access-list-number-permit] source [source-wildcard]
+
+- Bước 3: Bạn xây dựng mối quan hệ của địa chỉ nguồn (đã thiết lập trong ACL) với IP hợp lệ của mạng bên ngoài theo cú pháp:
+
+Router (config) # ip nat inside source list <acl-number> pool <name>
+
+- Bước 4: Bạn thiết lập cổng kết nối mạng nội bộ theo cú pháp:
+
+Router (config-if) # ip nat inside
+
+- Bước 5: Bạn tiếp tục thiết lập cổng kết nối mạng bên ngoài theo cú pháp:
+
+Router (config-if) # ip nat outside
