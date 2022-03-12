@@ -84,3 +84,73 @@ Bước 1: Chọn Start -Settings – Network Connections
 Bước 2: Double-click – Local Area Connection, chọn Properties – Internet Protocol(TCP/IP) – Properties
 
 Bước 3: Điền thông số của DNS Server mà bạn muốn vào ô “Preferred DNS Server” và ô  “Alternate DNS Server”.
+
+**6.  Cơ chế hoạt động của DNS**
+
+Giả sử bạn muốn truy cập vào trang có địa chỉ tenmien.com.vn
+
+Bước 1:
+
+Trước hết chương trình trên máy người sử dụng gửi yêu cầu tìm kiếm địa chỉ IP ứng với tên miền tenmien.com.vn tới máy chủ quản lý tên miền cục bộ thuộc mạng của nó. Máy chủ tên miền cục bộ này kiểm tra trong cơ sở dữ liệu của nó có chứa cơ sở dữ liệu chuyển đổi từ tên miền sang địa chỉ IP của tên miền mà người sử dụng yêu cầu không. Trong trường hợp máy chủ tên miền cục bộ có cơ sở dữ liệu này, nó sẽ gửi trả lại địa chỉ IP của máy có tên miền nói trên.
+
+Trong trường hợp máy chủ tên miền cục bộ không có cơ sở dữ liệu về tên miền này nó sẽ hỏi lên các máy chủ tên miền ở mức cao nhất. Máy chủ tên miền ở mức ROOT này sẽ chỉ cho máy chủ tên miền cục bộ địa chỉ của máy chủ tên miền quản lý các tên miền có đuôi .vn.
+
+Bước 2:
+
+Tiếp đó, máy chủ tên miền cục bộ gửi yêu cầu đến máy chủ quản lý tên miền Việt Nam (.VN) tìm tên miền tenmien.com.vn
+
+Máy chủ tên miền cục bộ sẽ hỏi máy chủ quản lý tên miền vnn.vn địa chỉ IP của tên miền tenmien.com.vn. Do máy chủ quản lý tên miền vnn.vn có cơ sở dữ liệu về tên miền semtek.com.vn nên địa chỉ IP của tên miền này sẽ được gửi trả lại cho máy chủ tên miền cục bộ.
+
+Bước 3:
+
+Cuối cùng, máy chủ tên miền cục bộ chuyển thông tin tìm được đến máy của người sử dụng.
+
+**7. Kiến trúc DNS**
+
+* Không gian tên miền (Domain name space)
+
+Không gian tên miền là một kiến trúc dạng cây (hình), có chứa nhiều nốt (node). Mỗi nốt trên cây sẽ có một nhãn và có không hoặc nhiều resource record (RR), chúng giữ thông tin liên quan tới tên miền. Nốt root không có nhãn
+
+* Tên miền (Domain name)
+
+Tên miền được tạo thành từ các nhãn và phân cách nhau bằng dấu chấm (.), ví dụ example.com. Tên miền còn được chia theo cấp độ như tên miền top level, tên miền cấp 1, cấp 2...
+
+* Cú pháp tên miền (Domain name syntax)
+
+Tên miền được định nghĩa trong các RFC 1035, RFC 1123, và RFC 2181. Một tên miền bao gồm một hoặc nhiều phần, gọi là các nhãn (label), chúng cách nhau bởi dấu chấm (.), ví dụ example.com.
+
+Hệ thống phân giải tên miền tính theo hướng từ phải sang trái. Ví dụ www.example.com thì nhãn example là một tên miền con của tên miền com, và www là tên miền con của tên miền example.com. Cây cấu trúc này có thể có tới 127 cấp.
+
+* Tên miền quốc tế hóa (Internationalized domain names)
+
+Do sự giới hạn của bộ ký tự ASCII trong việc diễn tả các ngôn ngữ khác nhau trên thế giới, ICANN cho phép thiết lập hệ thống IDNA (Internationalized domain names Application), dùng ký tự Unicode để biểu diễn tên miền
+
+* Máy chủ tên miền (NS - Name Server)
+
+Máy chủ tên miền chứa thông tin lưu trữ về một số tên miền. Hệ thống phân giải tên miền được vận hành bởi hệ thống dữ liệu phân tán, dạng Client-Server. Các node của hệ thống dữ liệu này là các máy chủ tên miền. Mỗi một tên miền sẽ có ít nhất một máy chủ tên miền chứa thông tin về tên miền đó. Các thông tin về máy chủ tên miền sẽ được lưu trữ trong các zone của tên miền. Có hai dạng Name Server là là Primary và Secondary. Một Client sẽ ưu tiên hỏi Primary trước và thử lại với Secondary nếu Primary không thể trả lời thông tin về tên miền đó trong thời gian quy định.
+
+* Máy chủ tên miền có thẩm quyền (Authoritative name server)
+
+Máy chủ tên miền có thẩm quyền là một máy chủ tên miền có thể trả lời các truy vấn DNS từ các dữ liệu gốc, ví dụ, tên miền quản trị hoặc phương thức DNS động.
+
+**8. Cấu trúc gói tin DNS**
+
+* ID: Là một trường 16 bits, chứa mã nhận dạng, nó được tạo ra bởi một chương trình để thay cho truy vấn. Gói tin hồi đáp sẽ dựa vào mã nhận dạng này để hồi đáp lại. Chính vì vậy mà truy vấn và hồi đáp có thể phù hợp với nhau.
+* QR: Là một trường 1 bit. Bít này sẽ được thiết lập là 0 nếu là gói tin truy vấn, được thiết lập là một nếu là gói tin hồi đáp.
+* Opcode: Là một trường 4 bits, được thiết lập là 0 cho cờ hiệu truy vấn, được thiết lập là 1 cho truy vấn ngược, và được thiết lập là 2 cho tình trạng truy vấn.
+* AA: Là trường 1 bit, nếu gói tin hồi đáp được thiết lập là 1, sau đó nó sẽ đi đến một server có thẩm quyền giải quyết truy vấn.
+* TC: Là trường 1 bit, trường này sẽ cho biết là gói tin có bị cắt khúc ra do kích thước gói tin vượt quá băng thông cho phép hay không.
+* RD: Là trường 1 bit, trường này sẽ cho biết là truy vấn muốn server tiếp tục truy vấn một cách đệ quy.
+* RA: Trường 1 bit này sẽ cho biết truy vấn đệ quy có được thực thi trên server không.
+* Z: Là trường 1 bit. Đây là một trường dự trữ, và được thiết lập là 0.
+* Rcode: Là trường 4 bits, gói tin hồi đáp sẽ có thể nhận các giá trị sau:
+  * 0: Cho biết là không có lỗi trong quá trình truy vấn.
+  * 1: Cho biết định dạng gói tin bị lỗi, server không hiểu được truy vấn.
+  * 2: Server bị trục trặc, không thực hiện hồi đáp được.
+  * 3: Tên bị lỗi. Chỉ có server có đủ thẩm quyền mới có thể thiết lập giá trị náy.
+  * 4: Không thi hành. Server không thể thực hiện chức năng này.
+  * 5: Server từ chối thực thi truy vấn.
+* QDcount: Số lần truy vấn của gói tin trong một vấn đề.
+* ANcount: Số lượng tài nguyên tham gia trong phần trả lời.
+* NScount: Chỉ ra số lượng tài nguyên được ghi lại trong các phần có thẩm quyền của gói tin.
+* ARcount: Chỉ ra số lượng tài nguyên ghi lại trong phần thêm vào của gói tin.
