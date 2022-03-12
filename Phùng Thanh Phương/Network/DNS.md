@@ -55,7 +55,8 @@ Danh sách DNS server tốt nhất
 
 **4. Phân loại DNS Server**
 
-Root Name Servers là gì?
+**4.1.Root Name Servers**
+
 Đây là máy chủ tên miền chứa các thông tin, để tìm kiếm các máy chủ tên miền lưu trữ (authority) cho các tên miền thuộc mức cao nhất (top-level-domain).
 
 Máy chủ ROOT có thể đưa ra các truy vấn (query) để tìm kiếm tối thiểu các thông tin về địa chỉ của các máy chủ tên miền authority thuộc lớp top-level-domain chứa tên miền muốn tìm.
@@ -65,3 +66,21 @@ Sau đó, các máy chủ tên miền ở mức top-level-domain có thể cung 
 Một điểm đáng chú ý khác, quá trình tìm kiếm tên miền luôn được bắt đầu bằng các truy vấn gửi cho máy chủ ROOT. Nếu như các máy chủ tên miền ở mức ROOT không hoạt động, quá trình tìm kiếm này sẽ không được thực hiện.
 
 Để tránh điều này xảy ra, trên mạng Internet hiện tại có 13 hệ thống máy chủ tên miền ở mức ROOT. Các máy chủ tên miền này nói chung và ngay trong cùng một hệ thống nói riêng đều được đặt tại nhiều vị trí khác nhau trên mạng Internet.
+
+**4.2. Local Name Servers**
+
+Server này chứa thông tin, để tìm kiếm máy chủ tên miền lưu trữ cho các tên miền thấp hơn. Nó thường được duy trì bởi các doanh nghiệp, các nhà cung cấp dịch vụ Internet (ISPs)
+
+**5. CÁCH SỬ DỤNG DNS**
+
+Để sử dụng DNS, thì mỗi loại sẽ có những tốc độ biên khác nhau nên người dùng từ đây cũng có thể tự đưa ra lựa chọn DNS server. Theo đó, người dùng có hai sự lựa chọn cho việc sử dụng là theo DNS server khác (ở đây có thể miễn phí hoặc phải trả phí), hoặc là sự dụng DNS đã được mặc định trước từ nhà cung cấp về dịch vụ internet.
+
+![image](https://user-images.githubusercontent.com/48250210/158002046-f73a69dd-9081-4ae3-95e9-43ab3234fbbd.png)
+
+Nếu bạn làm thèo cách đầu tiên, sử dụng DNS server khác, thì bạn cần phải thay đổi DNS ở trong máy tính của mình với những bước cơ bản sau:
+
+Bước 1: Chọn Start -Settings – Network Connections
+
+Bước 2: Double-click – Local Area Connection, chọn Properties – Internet Protocol(TCP/IP) – Properties
+
+Bước 3: Điền thông số của DNS Server mà bạn muốn vào ô “Preferred DNS Server” và ô  “Alternate DNS Server”.
