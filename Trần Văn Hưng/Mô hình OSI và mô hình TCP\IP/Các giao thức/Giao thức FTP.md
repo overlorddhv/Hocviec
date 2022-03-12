@@ -86,20 +86,20 @@ Khi Client-DTP và Server-DTP thiết lập xong kênh dữ liệu, dữ liệu 
   
   Được sử dụng nhiều nhất trong 3 phương thức trong triển khai FTP thực tế. Do: Là phương thức mặc định và đơn giản nhất; là phương thức phổ biến nhất, vì nó xử lí các file chỉ đơn thuần là xử lí dòng byte, mà không cần để ý tới nội dung; Không tốn 1 lượng byte “overload” nào để thông báo Header.
    - Block mode
-      Phương thức truyền dữ liệu mang tính quy chuẩn hơn.
+     Phương thức truyền dữ liệu mang tính quy chuẩn hơn.
   
-      Dữ liệu được chia thành nhiều khối nhỏ và đóng gói thành các FTP block.
+     Dữ liệu được chia thành nhiều khối nhỏ và đóng gói thành các FTP block.
   
-      Mỗi block có 1 trường Header 3 byte: báo hiệu độ dài, và chứa thông tin về các khối dữ liệu đang được gửi.
+     Mỗi block có 1 trường Header 3 byte: báo hiệu độ dài, và chứa thông tin về các khối dữ liệu đang được gửi.
   
-      Một thuật toán đặc biệt được sử dụng để kiểm tra các dữ liệu đã truyền đi. Và để phát hiện, khởi tạo lại đối với 1 phiên truyền dữ liệu đã bị ngắt kết nối.
+     Một thuật toán đặc biệt được sử dụng để kiểm tra các dữ liệu đã truyền đi. Và để phát hiện, khởi tạo lại đối với 1 phiên truyền dữ liệu đã bị ngắt kết nối.
   
   - Compressed mode (Chế độ nén)
-        Phương thức truyền dữ liệu sử dụng 1 kỹ thuật nén đơn giản, là “run-lenght encoding (mã hóa chiều dài)” – có tác dụng phát hiện và xử lí các đoạn lặp trong dữ liệu được truyền đi để giảm chiều dài của toàn bộ thông điệp.
+       Phương thức truyền dữ liệu sử dụng 1 kỹ thuật nén đơn giản, là “run-lenght encoding (mã hóa chiều dài)” – có tác dụng phát hiện và xử lí các đoạn lặp trong dữ liệu được truyền đi để giảm chiều dài của toàn bộ thông điệp.
     
-        Thông tin sau khi được nén, sẽ được xử lí như Block mode, với trường Header.
+       Thông tin sau khi được nén, sẽ được xử lí như Block mode, với trường Header.
     
-        Trong thực tế, việc nén dữ liệu thường được thực hiện ở chỗ khác, làm cho phương thức Compressed mode trở nên không cần thiết.
+       Trong thực tế, việc nén dữ liệu thường được thực hiện ở chỗ khác, làm cho phương thức Compressed mode trở nên không cần thiết.
     
  # 9. Dữ liệu trong FTP
 
@@ -109,13 +109,13 @@ Phần đầu tiên của thông tin có thể được đưa ra về tập tin 
 
 Có 4 kiểu dữ liệu khác nhau được quy định trong chuẩn của FTP.
 
-    ASCII: file văn bản ASCII
+   ASCII: file văn bản ASCII
   
-    EBCDIC: tương tự ASCII, nhưng sử dụng kiểu kí tự EBCDIC do IBM đặt.
+   EBCDIC: tương tự ASCII, nhưng sử dụng kiểu kí tự EBCDIC do IBM đặt.
   
-    Image: Các tập tin không có cấu trúc nội bộ chính thức.
+   Image: Các tập tin không có cấu trúc nội bộ chính thức.
   
-    Local: Kiểu dữ liệu này được sử dụng để xử lí các tập tin có thể lưu trữ dữ liệu trong byte logic. Cách xác định loại này cùng với cách dữ liệu có cấu trúc cho phép dữ liệu được lưu trữ trên hệ thống đích một cách phù hợp với đại diện local của nó.
+   Local: Kiểu dữ liệu này được sử dụng để xử lí các tập tin có thể lưu trữ dữ liệu trong byte logic. Cách xác định loại này cùng với cách dữ liệu có cấu trúc cho phép dữ liệu được lưu trữ trên hệ thống đích một cách phù hợp với đại diện local của nó.
 
 Trong thực tế, hai loại kiểu dữ liệu thường xuyên nhất được sử dụng là ASCII và Image. Kiểu ASCII được sử dụng cho các tập tin văn bản, và cho phép chúng được di chuyển giữa các hệ thống với dòng kết thúc mã chuyển đổi tự động. Loại Image được sử dụng cho các tập tin nhị phân, chẳng hạn như đồ họa hình ảnh, tập tin ZIP và các dữ liệu khác. Nó cũng thường được gọi là kiểu nhị phân vì lý do đó.
   - FTP Format Control:
@@ -123,18 +123,18 @@ Trong thực tế, hai loại kiểu dữ liệu thường xuyên nhất đượ
 
 3 tùy chọn trong FTP Format Control:
 
-      Non Print : Đây là tùy chọn mặc định, cho biết không có định dạng dọc
+  Non Print : Đây là tùy chọn mặc định, cho biết không có định dạng dọc
   
-      Telnet Format : Tệp sử dụng các kí tự điều khiển định dạng dọc, như được chỉ định trong giao thức Telnet
+  Telnet Format : Tệp sử dụng các kí tự điều khiển định dạng dọc, như được chỉ định trong giao thức Telnet
   
-      Carriage Control/FORTRAN : Tệp sử dụng kí tự điều khiển được định dạng đưa ra làm kí tự đầu tiên của mỗi dòng, như được xác định cho ngôn ngữ lập trình FORTRAN.
+  Carriage Control/FORTRAN : Tệp sử dụng kí tự điều khiển được định dạng đưa ra làm kí tự đầu tiên của mỗi dòng, như được xác định cho ngôn ngữ lập trình FORTRAN.
   
   - FTP Data Structures:
   Ngoài việc xác định một loại dữ liệu tệp tin, ta cũng có thể xác định cấu trúc tệp tin theo 3 cách:
 
-      File Structure : Tệp là 1 luồng byte liền kề không có cấu trúc bên trong. Đây là cách mặc định và được sử dụng cho hầu hết các loại tệp.
+     File Structure : Tệp là 1 luồng byte liền kề không có cấu trúc bên trong. Đây là cách mặc định và được sử dụng cho hầu hết các loại tệp.
   
-      Record Structure : Tệp bao gồm một tập hợp các bản ghi, mỗi bản ghi được phân định bằng đánh dấu end-of-record. Cấu trúc bản ghi có thể sử dụng cho các tệp văn bản ASCII, nhưng chúng thường được gửi với cấu trúc tệp thông thường sử dụng kiểu dữ liệu ASCII.
+     Record Structure : Tệp bao gồm một tập hợp các bản ghi, mỗi bản ghi được phân định bằng đánh dấu end-of-record. Cấu trúc bản ghi có thể sử dụng cho các tệp văn bản ASCII, nhưng chúng thường được gửi với cấu trúc tệp thông thường sử dụng kiểu dữ liệu ASCII.
   
-      Page Structure : Tệp chứa 1 trang dữ liệu được lập chỉ mục đặc biệt. Cấu trúc này không được sử dụng phổ biến. Nó được tạo ra cho 1 máy tính cổ xưa được sử dụng trong ARPAnet đời đầu.
+     Page Structure : Tệp chứa 1 trang dữ liệu được lập chỉ mục đặc biệt. Cấu trúc này không được sử dụng phổ biến. Nó được tạo ra cho 1 máy tính cổ xưa được sử dụng trong ARPAnet đời đầu.
       
