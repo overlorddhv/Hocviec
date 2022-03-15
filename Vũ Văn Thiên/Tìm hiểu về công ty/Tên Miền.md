@@ -29,3 +29,25 @@ Chủ động nộp phí duy trì trước khi tên miền hết thời hạn s�
 **Lựa chọn tên miền**
 
 Chọn một tên miền là một bước quan trọng cho bất kỳ cá nhân hoặc tổ chức nào. Một tên miền tốt nên có các đặc điểm sau: Ngắn, dễ nhớ, dễ gõ, có ý nghĩa.
+
+**Phân loại** 
+
+Phân loại tên miền (domain) chia thành 2 nhóm
+- Tên miền cao cấp dùng chung
+- Tên miền quốc gia cao cấp nhất
+
+**Lợi ích và đặc điểm**
+
+- Được pháp luật Việt Nam bảo vệ:
+- Kỹ thuật tin cậy, an toàn:
+- Truy vấn nhanh chóng:
+- Hạn chế tối đa khi mất liên lạc quốc tế:
+- Được Hệ thống trung chuyển Internet trong nước - VNIX của VNNIC phục vụ:
+- Lợi ích tìm kiếm và quảng bá:
+- Chăm sóc, hỗ trợ:
+- Đăng ký thuận tiện:
+
+**Đối tượng khách hàng thường hay sử dụng**
+
+
+
