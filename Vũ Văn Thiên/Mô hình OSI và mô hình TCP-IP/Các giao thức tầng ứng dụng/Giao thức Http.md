@@ -30,4 +30,20 @@ Nhưng trong khi cốt lõi bản thân HTTP là stateless, các cookie HTTP cho
 ## Cấu trúc cơ bản của HTTP
 
 Qua sơ đồ bên dưới, các bạn sẽ thấy được cấu trúc khá đơn giản của 1 ứng dụng web và miêu tả cụ thể vị trí của HTTP là gì:
-![alt text]()
+![Screenshot_1](https://user-images.githubusercontent.com/62273292/158309221-f8eb97a0-0d0f-4c70-aae2-f07773f8f173.png)
+
+Giao thức HTTP là gì? HTTP còn là 1 giao thức Yêu cầu – Phản hồi dựa trên cấu trúc Client – Server. Client và Server giao tiếp với nhau bằng cách trao đổi các message độc lập (trái ngược với 1 luồng dữ liệu). Các message được gửi bởi client, thông thường là 1 trình duyệt web, được gọi là các yêu cầu và message được gửi bởi server như 1 sự trả lời, được gọi là phản hồi.
+
+Các bạn có thể tìm hiểu thêm về các mã trạng thái HTTP – HTTP status code và hiểu rõ về danh sách các HTTP status code để biết rõ hơn về các Yêu cầu và Phản hồi tại đây nha.
+
+## Kết nối của HTTP
+
+1 kết nối được kiểm soát tại layer truyền tải, do đó về cơ bản nằm ngoài phạm vi của HTTP. Dù HTTP không yêu cầu giao thức truyền tải cơ bản phải dựa trên sự kết nối, vì chỉ yêu cầu nó đáng tin cậy hoặc không bị mất message (ít nhất là trình báo 1 lỗi). Trong số hai giao thức truyền tải phổ biến nhất trên Internet, TCP thì đáng tin cậy còn UDP thì không. HTTP do đó dựa vào tiêu chuẩn TCP vốn là connection-based (dựa trên sự kết nối).
+
+![image](https://user-images.githubusercontent.com/62273292/158309790-b19c9f65-3f09-4744-96ff-2d81d97acc6f.png)
+
+Trước khi 1 client và server có thể trao đổi 1 cặp yêu cầu – phản hồi HTTP, chúng phải thiết lập 1 kết nối TCP, 1 quá trình vốn yêu cầu 1 số vòng lặp. Hoạt động mặc định của HTTP/1.0 là mở 1 kết nối TCP riêng biệt cho từng cặp yêu cầu – phản hồi HTTP. Điều này làm nó kém hiệu quả hơn việc chia sẻ 1 kết nối TCP đơn lẻ khi nhiều yêu cầu được gửi liên tiếp.
+
+Để giảm thiểu lỗ hỏng này, HTTP/1.1 đã giới thiệu pipelining (nhưng được chứng minh là khá khó để thực hiện) và kết nối liên tục: kết nối TCP bên dưới có thể được kiểm soát 1 phần bằng cách sử dụng tiêu đề Connection. HTTP/2 đã tiến 1 bước xa hơn bằng cách ghép các thông báo qua 1 kết nối duy nhất, giúp giữ cho kết nối ổn định và hiệu quả hơn.
+
+Các thử nghiệm đang được tiến hành để thiết kế một giao thức truyền tải tốt hơn phù hợp hơn với HTTP. Ví dụ: Google đang thử nghiệm QUIC được xây dựng trên UDP để cung cấp giao thức truyền tải cũng đáng tin cậy và hiệu quả hơn.
