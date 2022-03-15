@@ -30,4 +30,4 @@ Nhưng trong khi cốt lõi bản thân HTTP là stateless, các cookie HTTP cho
 ## Cấu trúc cơ bản của HTTP
 
 Qua sơ đồ bên dưới, các bạn sẽ thấy được cấu trúc khá đơn giản của 1 ứng dụng web và miêu tả cụ thể vị trí của HTTP là gì:
-
+![alt text]()
