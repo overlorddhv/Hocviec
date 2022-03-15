@@ -13,6 +13,20 @@ Ngoài ra, các yêu cầu trong dự án như vậy thay đổi thường xuyê
 Hệ thống chi nhánh trong Git cho phép các nhà phát triển làm việc riêng lẻ trên một tác vụ (Ví dụ: Một nhánh -> Một tác vụ HOẶC Một nhánh -> Một nhà phát triển). Về cơ bản, hãy nghĩ về Git như một ứng dụng phần mềm nhỏ kiểm soát cơ sở code của bạn, nếu bạn là nhà phát triển.
 ![image](https://user-images.githubusercontent.com/62273292/158340588-c10ff495-2dad-423e-9b7c-a20c0448d032.png)
 
+
+## Tại sao nên sử dụng Git?
+
+Có rất nhiều lợi thế để bạn nên sử dụng Git trong việc lập trình ngay từ hôm nay, bất kể là lập trình cái gì đi chăng nữa.
+
+ - Git dễ sử dụng, an toàn và nhanh chóng.
+ - Có thể giúp quy trình làm việc code theo nhóm đơn giản hơn rất nhiều bằng việc kết hợp các phân nhánh (branch).
+ - Bạn có thể làm việc ở bất cứ đâu vì chỉ cần clone mã nguồn từ kho chứa hoặc clone một phiên bản thay đổi nào đó từ kho chứa, hoặc một nhánh nào đó từ kho chứa.
+ - Dễ dàng trong việc deployment sản phẩm.
+ Và nhiều hơn thế nữa.
+Nếu bạn là một lập trình viên thì Git là một hệ thống bạn cần phải biết cách sử dụng, ít nhất là ngay từ bây giờ.
+
+Và bắt đầu sử dụng Git thế nào thì ở bài sau chúng ta sẽ tìm hiểu tới.
+
 ## Cách Git hoạt động
 
 Nếu chúng ta muốn bắt đầu sử dụng Git, chúng ta cần biết nơi lưu trữ các repository của mình.
