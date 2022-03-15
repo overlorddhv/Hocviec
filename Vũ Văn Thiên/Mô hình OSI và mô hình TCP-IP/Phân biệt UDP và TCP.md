@@ -18,4 +18,9 @@ Sau đây, là những điểm khác biệt quan trọng giữa UDP và TCP
 |Hiệu năng|TCP chậm hơn và kém hiệu quả hơn về hiệu suất so với UDP. Ngoài ra TCP cũng nặng hơn so với UDP.|UDP nhanh hơn và hiệu quả hơn TCP.|
 |Truyền lại|Có thể truyền lại packet trong TCP trong trường hợp gói bị mất hoặc cần gửi lại.|	Không thể truyền lại các packet trong UDP.|
 
+## kết luận
+
+Cả TCP và UDP đều có những ưu điểm và nhược điểm. UDP nhanh hơn, đơn giản và hiệu quả hơn và do đó thường được sử dụng để gửi các tệp âm thanh, video và TCP, mặt khác, mạnh mẽ, đáng tin cậy và đảm bảo phân phối các gói theo cùng một thứ tự.
+Do đó, chúng tôi kết luận rằng cả TCP và UDP đều cần thiết cho việc truyền dữ liệu
+
 
