@@ -45,6 +45,20 @@ Domain Name cũng có thể chuyển hướng. Nghĩa là khi người khác tru
 
 *Ví dụ: Nếu truy cập www.fb.com, bạn sẽ được đưa đến www.facebook.com.*
 
+## Phân biệt tên miền 
+
+  - Domain name gồm nhiều thành phần cấu tạo nên cách nhau bởi dấu chấm ".". Ví dụ: thanhnien.com.vn là tên miền máy chủ web của Thanh Niên.
+    - Thành phần thứ nhất "thanhnien" là tên của máy chủ
+    - Thành phần thứ hai ".com" thường gọi là tên miền mức hai (Second Domain Level)
+    - Thành phần cuối cùng ".vn" là tên miền mức cao nhất (TLD - Top Level Domain)
+
+  - Nếu để ý, bạn không thể tìm thấy trang web nào không có TLD. Mỗi domain đều được tạo thành từ một tên và một TLD.
+
+![image](https://user-images.githubusercontent.com/62273292/158510997-2556faba-546f-4dc2-8787-f960673b3756.png)
+
+Có rất nhiều loại tên với những phần mở rộng (đuôi) khác nhau. Một trong những loại phổ biến nhất là .com. Và còn có nhiều tùy chọn khác như .vn, .org, .net, .info, .io
+
+
 
 
 
