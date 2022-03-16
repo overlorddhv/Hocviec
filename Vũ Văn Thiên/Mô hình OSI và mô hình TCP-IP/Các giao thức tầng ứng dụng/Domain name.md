@@ -58,6 +58,86 @@ Domain Name cũng có thể chuyển hướng. Nghĩa là khi người khác tru
 
 Có rất nhiều loại tên với những phần mở rộng (đuôi) khác nhau. Một trong những loại phổ biến nhất là .com. Và còn có nhiều tùy chọn khác như .vn, .org, .net, .info, .io
 
+## Một số nhà cung cấp tại Việt Nam và quốc tế
+
+**Top nhà cung cấp tên miền uy tín nhất việt nam**
+- 1 Nhân Hòa
+
+![image](https://user-images.githubusercontent.com/62273292/158511784-f1042a12-a0c2-4117-816f-b5094a46b47f.png)
+
+Nhân Hòa là nhà cung cấp tên miền & hosting uy tín tại Việt Nam với hơn 20 năm kinh nghiệm và hiện đang cung cấp dịch vụ cho hơn 60.000 khách hàng, hơn 100.000 tên miền đã được đăng ký.
+
+Đây là một thương hiệu dịch vụ tên miền có thị phần lớn ở miền Bắc, miền Trung và miền Nam.
+
+Tuy ra đời cùng với thời điểm P.A Việt Nam, Mắt Bão nhưng tốc độ phát triển của Nhân Hòa có phần nhanh hơn.
+
+Điểm mạnh của Nhân Hòa là dịch vụ chăm sóc khách hàng tận tình được khách hàng đánh giá tốt.
+
+- 2 MAXWEB
+
+![image](https://user-images.githubusercontent.com/62273292/158511956-d90b0c6f-cac7-4625-8c05-d5b7831c780b.png)
+
+
+Công ty TNHH Giải Pháp Công Nghệ và Truyền Thông MBS là đơn vị  chuyên cung cấp server và dịch vụ domain, hosting ,website kèm theo.
+
+Điểm mạnh của Maxweb là xây dựng hệ thống đăng ký dịch vụ ổn định, thuận tiện cho việc đăng ký và hướng tới đối tượng khách hàng doanh nghiệp và cá nhân.
+
+Mức giá của Maxweb thường khá phú hợp với khách hàng cá nhân và doanh nghiệp
+
+- 3 AZDIGI
+
+![image](https://user-images.githubusercontent.com/62273292/158512004-dfa5529e-30f1-4fbe-b26d-dccf2aee3991.png)
+
+AZDIGI là nhà cung cấp chuyên về dịch vụ hosting, VPS, tên miền thành lập từ đầu năm 2016.
+
+Tuy nhiên, AZDIGI đã từng bước khẳng định được tên tuổi bởi uy tín và chất lượng.
+
+Bên cạnh hosting, AZDIGI còn cung cấp dịch vụ đăng ký tên miền, cấp chứng chỉ bảo mật SSL…
+
+AZDIGI đang đi đúng hướng và phát triển mạnh mẽ do thành lập bởi 1 cái tên vô cùng nổi tiếng trong cộng đồng WordPress Việt Nam – Thạch Phạm.
+
+Kể từ ngày 20/12/2016, AZDIGI chính thức trở thành đại lý cung cấp tên miền quốc tế tại Việt Nam với mức giá tối ưu và có nhiều khuyến mãi hấp dẫn.
+
+**Top nhà cung cấp tên miền uy tín nhất quốc tế**
+
+- 1 NameSilo
+
+![image](https://user-images.githubusercontent.com/62273292/158512246-38d1905b-52d8-4086-8886-b5bcfe790ce2.png)
+
+
+NameSilo là cái tên mà mình dành rất nhiều sự ưu tiên khi giới thiệu đến bạn và mình đang sử dụng khá nhiều tên miền tại NameSilo được hơn 3 năm. Điều này chứng tỏ nếu bạn đang băn khoăn xem nên mua tên miền ở đâu thì hãy ưu tiên lựa chọn NameSilo.
+
+Ưu điểm:
+
+  - Mức giá cho các domain khá rẻ khi mua và khi gia hạn.
+  - Miễn phí mãi mãi ẩn thông tin tên miền. 
+  - Được nhiều người tin tưởng lựa chọn. Đội ngũ hỗ trợ tốt. 
+  - Bảng điều khiển tên miền dễ sử dụng
+
+
+- 2 Namecheap
+
+![image](https://user-images.githubusercontent.com/62273292/158512487-a969dcaf-6ca6-44df-a070-74adae33862c.png)
+
+
+Namecheap được thành lập từ năm 2000 và được đánh giá là một trong những công ty cung cấp dịch vụ tên miền tốt nhất hiện nay. 
+
+Namecheap tự hào với hơn 3 triệu khách hàng đăng ký cùng với hơn 7 triệu tên miền đang được quản lý. Chi phí tên miền khi đăng ký mới và gia hạn tại đây cũng rất hợp lí.
+
+**Ưu điểm:**
+
+- Thường xuyên có khuyến mại hấp dẫn. 
+- Thanh toán dễ dàng bằng PayPal, thẻ Visa/MasterCard. 
+- Hỗ trợ Live chat cực nhanh. Support cực kì tốt. 
+- Miễn phí Domain Privacy. 
+
+
+**Nhược điểm:**
+
+Giao diện người dùng mới đây được thay đổi khá phức tạp, nếu chưa quen các bạn sẽ cảm thấy bỡ ngỡ và khó sử dụng. 
+
+Namecheap cũng là một cái thương hiệu rất uy tín trong lĩnh vực tên miền và hosting mà bạn nên nghĩ đến.
+
 
 
 
