@@ -125,7 +125,8 @@ Theo mặc định thì khi truy cập IP của VPS hoặc khi trỏ một tên 
 Thêm phía trên dòng IncludeOptional conf.d/*.conf rules sau:
 
 
-```<VirtualHost *:80>
+```
+<VirtualHost *:80>
 	DocumentRoot /var/www/html
 	ServerName www.example.com
 	<Directory "/var/www/html">
@@ -134,7 +135,8 @@ Thêm phía trên dòng IncludeOptional conf.d/*.conf rules sau:
                 Require method GET POST OPTIONS
 	</Directory>
 </VirtualHost>
-Screenshot_113```
+Screenshot_113
+```
 
 5.3. Tạo virtual host (vhost) cho website
 
@@ -149,13 +151,15 @@ Trong ví dụ này sẽ tạo website hostvn.net với vhost tương ứng là 
 
 Dán nội dung sau vào
 
-```<VirtualHost *:80>
+```
+<VirtualHost *:80>
 	ServerName www.hostvn.net
 	ServerAlias hostvn.net
 	DocumentRoot /home/hostvn.net/public_html
 	ErrorLog /home/hostvn.net/logs/error_log
 	CustomLog /home/hostvn.net/logs/access_log combined
-</VirtualHost>```
+</VirtualHost>
+```
 
 Tiếp theo các bạn cần tạo thư mục chứa mã nguồn website và thư mục chứa file log bằng các lệnh sau
 
@@ -175,7 +179,8 @@ Sau khi cấu hình hoàn tất các bạn trỏ tên miền về vps sau đó t
 
 Dán nội dung sau vào
 
-```<!DOCTYPE html>
+```
+<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
@@ -184,32 +189,12 @@ Dán nội dung sau vào
 <body>
 	<p><center><?= "HOSTVN.NET - Hướng dẫn cài đặt Apache trên CentOS 7" ?></center></p>
 </body>
-</html>```
+</html>
+```
 
 
 Truy cập tên miền của bạn bằng trình duyệt để kiểm tra
 
 ![image](https://user-images.githubusercontent.com/62273292/158965021-81e74010-a70b-4d81-9566-42ae931b9a2a.png)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
