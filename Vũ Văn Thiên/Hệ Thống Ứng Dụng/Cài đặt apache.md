@@ -189,9 +189,6 @@ Dán nội dung sau vào
 
 Truy cập tên miền của bạn bằng trình duyệt để kiểm tra
 
-![image](https://user-images.githubusercontent.com/62273292/158964615-d1673d11-de0b-4a66-ad98-aa4a52dab851.png)
-
-
 ![image](https://user-images.githubusercontent.com/62273292/158965021-81e74010-a70b-4d81-9566-42ae931b9a2a.png)
 
 
