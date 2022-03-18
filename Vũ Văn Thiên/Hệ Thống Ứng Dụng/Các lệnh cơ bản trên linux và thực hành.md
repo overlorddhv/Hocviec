@@ -1,4 +1,40 @@
 ## Phím tắt
+
+Lệnh `pwd` Hiển thị vị trí hiện tại trong hệ thống file.
+
+![image](https://user-images.githubusercontent.com/62273292/158973004-bd5e09f3-52a2-43f8-b093-b7df249a5292.png)
+
+
+Lệnh `whoami` Hiển thị tên người dùng - hữu ích nhất nếu chuyển đổi người dùng bằng lệnh su và cần được nhắc nhở về tài khoản nào đang được sử dụng
+
+![image](https://user-images.githubusercontent.com/62273292/158973852-bb9d138c-de24-49c8-8545-0e635db97373.png)
+
+Lệnh `ls` Cung cấp một danh sách file. Với tham số -a, lệnh hiển thị các file có tên bắt đầu bằng dấu chấm (ví dụ: .bashrc). Với tham số -l, lệnh hiển thị quyền, kích thước file và ngày/giờ cập nhật mới nhất.
+
+Lệnh `ls -l`
+
+![image](https://user-images.githubusercontent.com/62273292/158975410-6ba3fe70-2648-4164-ba84-c2f43a07e765.png)
+
+Lệnh `ls -a` 
+
+![image](https://user-images.githubusercontent.com/62273292/158975568-01184921-febb-4f58-a666-2b77a03acc66.png)
+
+Lệnh `env` 
+
+![image](https://user-images.githubusercontent.com/62273292/158976741-42662b23-f58c-40ab-9c55-5379d2496fe2.png)
+
+Lệnh `history`  Liệt kê các lệnh đã đưa ra trước đó.
+
+![image](https://user-images.githubusercontent.com/62273292/158977036-4b438f4c-1aa9-4284-823e-b8cc42044b9e.png)
+
+Lệnh `passwd` Thay đổi mật khẩu
+
+Lệnh mikdir Tạo một thư mục mới
+
+
+
+
+
 1. Trong terminal
 
 Ctrl + L: xoá toàn bộ màn hình, giống lệnh clear
