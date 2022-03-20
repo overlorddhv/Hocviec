@@ -1,6 +1,6 @@
-# Netword File System
+# Network File System
 
-## NFS (Netword File System) là gì?
+## NFS (Network File System) là gì?
 
 NFS (Network File System) là một hệ thống giao thức chia sẻ file phát triển bởi Sun Microsystems từ năm 1984, cho phép một người dùng trên một máy tính khách truy cập tới hệ thống file chia sẻ thông qua một mạng máy tính giống như truy cập trực tiếp trên ổ cứng.
 
