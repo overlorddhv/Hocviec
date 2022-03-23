@@ -96,5 +96,20 @@ Sau đó cho phép Tomcat khởi động cùng hệ thống và bật Tomcat b�
 sudo systemctl enable tomcat 
 sudo systemctl start tomcat
 ```
+Kiểm tra xem tomcat đã được khởi động chưa
+
+```./startup.sh```
+
+![image](https://user-images.githubusercontent.com/62273292/159659636-2ed908ea-b658-47e5-afa1-70ef0c0b5f5b.png)
+
+![image](https://user-images.githubusercontent.com/62273292/159659767-f96e3b50-e719-4e0e-ac36-fae48e237dbe.png)
+
+![image](https://user-images.githubusercontent.com/62273292/159659838-9f93f6f7-a741-421f-b831-a0614336018e.png)
+
+![image](https://user-images.githubusercontent.com/62273292/159659955-6eba4429-dafc-446e-876b-87420eac54df.png)
+
+
+
+
 
 
