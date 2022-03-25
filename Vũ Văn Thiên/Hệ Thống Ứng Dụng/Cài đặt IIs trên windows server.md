@@ -126,6 +126,88 @@ Vào đường dẫn: C:\Windows\System32\drivers\etc, mở file hosts lên và 
 
 # IIS với php
 
+Cài đặt PHP Manager
+
+PHP Manager được sử dụng để quản lý các phiên bản PHP trên hệ thống, cũng như đơn giản hoá việc sử dụng PHP. Khi sử dụng PHP manager, chỉ cần vài thao tác chuột là đã có thể add thêm 1 phiên bản PHP sử dụng cũng như tuỳ biến các extension PHP.
+
+Để cài đặt PHP Manager, trước hết cần cài đặt Dotnet 3.5
+
+Tại Server Manager > Features > Add Features
+
+![image](https://user-images.githubusercontent.com/62273292/160040625-37aaf410-71f8-4015-8cad-8e225be5ada7.png)
+
+
+Chọn Dotnet FrameworkFramework 3.5.1 Features > Next
+
+![image](https://user-images.githubusercontent.com/62273292/160040647-805c75c8-a457-44c2-943e-8986a54192d9.png)
+
+
+Chọn Install và chờ hệ thống cài đặt hoàn tất
+
+![image](https://user-images.githubusercontent.com/62273292/160040664-3b08f337-80a5-4ace-b8a5-5c04ee2c7ab0.png)
+
+
+Tiến hành cài đặt PHP Manager theo các bước hướng dẫn của phần mềm.
+
+Sau khi cài đặt xong PHP Manager, tiến hành khởi động lại hệ thống VPS/Server
+
+Sau khi hệ thống đã khởi động lại, truy cập vào IIS và kiểm tra trạng thái của PHP Manager
+
+![image](https://user-images.githubusercontent.com/62273292/160040709-f53a734b-17c4-4bb2-bedb-e4bd65a86812.png)
+
+
+PHP Manager đã được cài đặt hoàn tất
+
+![image](https://user-images.githubusercontent.com/62273292/160040729-66f616f9-056d-4825-ab29-3063b6aec528.png)
+
+
+Truy cập vào PHP Manager và chọn Register New PHP version
+
+![image](https://user-images.githubusercontent.com/62273292/160040753-82583cf7-8d37-4eba-b060-42f752441272.png)
+
+
+Chọn tới file php-cgi.exe trong thư mục php56 vừa giải nén
+
+![image](https://user-images.githubusercontent.com/62273292/160040772-f52602df-a448-4243-a235-c5352631344a.png)
+
+
+Chọn OK
+
+![image](https://user-images.githubusercontent.com/62273292/160040779-3bd1003e-bd33-4fa8-9bfd-9242e84a4838.png)
+
+
+Như vậy ta đã add thành công PHP 5.6 vào IIS, trong trường hợp muốn add các phiên bản khác, chỉ cần lặp lại các thao tác add PHP như trên (Lưu ý: Cài đặt thêm Visual C++ theo yêu cầu của mỗi bản PHP).
+
+![image](https://user-images.githubusercontent.com/62273292/160040801-5fe5688f-6e43-4171-a5b5-c549fd603c61.png)
+
+
+Restart lại IIS
+
+![image](https://user-images.githubusercontent.com/62273292/160040821-90e6e46b-6bc9-420e-9fef-0f9b06b127b8.png)
+
+
+Tiến hành Kiểm tra phiên bản PHP đã được hoạt động chưa bằng cách vào PHP Manager > Check phpinfo()
+
+![image](https://user-images.githubusercontent.com/62273292/160040843-1a78ee47-da32-4a48-9ed2-bc701046a79d.png)
+
+
+Chọn Site là Url để test, ví dụ:
+
+![image](https://user-images.githubusercontent.com/62273292/160040861-a2dfa6cd-f16c-4951-a9cd-110bc8f5b457.png)
+
+
+Như vậy PHP đã được cài đặt hoàn tất
+## KẾT QUẢ
+
+
+![image](https://user-images.githubusercontent.com/62273292/160040927-7986c53b-1de2-41fb-9f5b-f802e169cbac.png)
+
+![image](https://user-images.githubusercontent.com/62273292/160041017-7750a048-dcdf-40c9-a9c7-9c0d49d1bf3f.png)
+
+![image](https://user-images.githubusercontent.com/62273292/160041065-842e173c-66cf-4f8e-acc0-5ca916029cb3.png)
+
+
+
 
 
 
