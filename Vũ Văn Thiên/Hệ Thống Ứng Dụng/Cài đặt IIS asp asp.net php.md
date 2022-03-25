@@ -65,9 +65,7 @@
 ![image](https://user-images.githubusercontent.com/62273292/158933959-6bf3577b-d982-4dab-8f8d-7ca764d4b1bb.png)
 
 
-## Hoàn Tất
 
-![image](https://user-images.githubusercontent.com/62273292/158937581-c94cdcd4-0788-471a-b9f5-cc56078424fd.png)
 
 
 # IIS với ASP Classic và ASP.net
@@ -115,20 +113,27 @@ Vào đường dẫn: C:\Windows\System32\drivers\etc, mở file hosts lên và 
  ![image](https://user-images.githubusercontent.com/62273292/160034915-e61a40ef-43df-4628-8225-6dcc91c43609.png)
 
 
+
+
+
+
+
+## Hoàn Tất
+
 ![image](https://user-images.githubusercontent.com/62273292/160034951-2ffd19c5-d017-4836-81e4-66e05cf26c96.png)
 
+## ASP 
+
+![image](https://user-images.githubusercontent.com/62273292/160043972-b70a311e-0fb0-4c33-946f-c90fca9b7038.png)
+
+![image](https://user-images.githubusercontent.com/62273292/160044043-30564283-1362-4e7f-b014-d5aacd7cb7c9.png)
+
+## ASP.NET
 
 ![image](https://user-images.githubusercontent.com/62273292/160035053-33f1b508-5fd6-4edc-9f12-43b530e0764e.png)
 
 
 ![image](https://user-images.githubusercontent.com/62273292/160035083-44b7bb5a-b0ae-4f63-9966-500953db8d0e.png)
-
-![image](https://user-images.githubusercontent.com/62273292/160043942-92f4031a-fde3-4dae-ace5-f57221022f77.png)
-
-## ASP 
-![image](https://user-images.githubusercontent.com/62273292/160043972-b70a311e-0fb0-4c33-946f-c90fca9b7038.png)
-
-![image](https://user-images.githubusercontent.com/62273292/160044043-30564283-1362-4e7f-b014-d5aacd7cb7c9.png)
 
 
 
@@ -209,6 +214,7 @@ Chọn Site là Url để test, ví dụ:
 
 
 Như vậy PHP đã được cài đặt hoàn tất
+
 ## KẾT QUẢ
 
 
