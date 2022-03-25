@@ -123,6 +123,18 @@ Vào đường dẫn: C:\Windows\System32\drivers\etc, mở file hosts lên và 
 
 ![image](https://user-images.githubusercontent.com/62273292/160035083-44b7bb5a-b0ae-4f63-9966-500953db8d0e.png)
 
+![image](https://user-images.githubusercontent.com/62273292/160043942-92f4031a-fde3-4dae-ace5-f57221022f77.png)
+
+## ASP 
+![image](https://user-images.githubusercontent.com/62273292/160043972-b70a311e-0fb0-4c33-946f-c90fca9b7038.png)
+
+![image](https://user-images.githubusercontent.com/62273292/160044043-30564283-1362-4e7f-b014-d5aacd7cb7c9.png)
+
+
+
+
+
+
 
 # IIS với php
 
