@@ -69,3 +69,64 @@
 
 ![image](https://user-images.githubusercontent.com/62273292/158937581-c94cdcd4-0788-471a-b9f5-cc56078424fd.png)
 
+
+# IIS với ASP Classic và ASP.net
+
+![image](https://user-images.githubusercontent.com/62273292/160034648-6a5993a1-62f5-46a4-890a-750419c8b98d.png)
+
+Chuột phải vào Site-> Add Website
+
+![image](https://user-images.githubusercontent.com/62273292/160034679-aff86192-ab91-4b7d-bbf4-97ec415fc31c.png)
+
+
+ Tiến hành cấu hình:
+ 
+ Đặt tên site name, chọn đến Application Pool, ở đây mình chọn .NET v4.5, sau đó OK
+(Ở đây các bạn có thể tạo Application pool, hướng dẫn tạo Application pool tại đây)
+
+![image](https://user-images.githubusercontent.com/62273292/160034722-897dafef-60d9-45af-9354-b361274331ca.png)
+
+
+Tiếp đến Physical Path: chọn đến đường dẫn thư mục có chứa file web config
+
+Sau đó chọn Connect as => Specific user => Set tài khoản Microsoft bạn đang sử dụng trên máy, điền Username & Password => OK
+
+![image](https://user-images.githubusercontent.com/62273292/160034768-435991d9-f666-422e-8a1d-fd52f5275c6c.png)
+
+ Tiếp đến ô IP Address gõ đúng cái địa chỉ IP của localhost (ở đây là 127.0.0.1), Port 80 là mặc định, Host name: tùy ý. Sau đó nhấn OK
+ 
+ ![image](https://user-images.githubusercontent.com/62273292/160034785-9ff6b55f-98ea-4c34-9af6-87c7658b4a47.png)
+
+
+ Lúc này đã tạo thành công Site
+ 
+ ![image](https://user-images.githubusercontent.com/62273292/160034819-73df15ee-51f4-4117-b089-db630f051c9b.png)
+
+
+Lúc này vẫn chưa chạy được, chúng ta phải tiến hành chỉnh sửa file host:
+
+Vào đường dẫn: C:\Windows\System32\drivers\etc, mở file hosts lên và làm như sau: Thêm dòng bôi vàng trong hình vào 127.0.0.1 test.lv.com (127.0.0.1: IP localhost, test.lv.com: Host name chúng ta đã thêm trong quá trình tạo Site), Lưu lại là OK
+
+![image](https://user-images.githubusercontent.com/62273292/160034878-8530b6b6-8e95-4bcd-97cd-750298de8559.png)
+
+
+ Mở trình duyệt gõ Host name chúng ta đã tạo, thì sẽ chạy được project Web của chùng ta mà không cần mở code lên chạy thủ công nữa.
+ 
+ ![image](https://user-images.githubusercontent.com/62273292/160034915-e61a40ef-43df-4628-8225-6dcc91c43609.png)
+
+
+![image](https://user-images.githubusercontent.com/62273292/160034951-2ffd19c5-d017-4836-81e4-66e05cf26c96.png)
+
+
+![image](https://user-images.githubusercontent.com/62273292/160035053-33f1b508-5fd6-4edc-9f12-43b530e0764e.png)
+
+
+![image](https://user-images.githubusercontent.com/62273292/160035083-44b7bb5a-b0ae-4f63-9966-500953db8d0e.png)
+
+
+# IIS với php
+
+
+
+
+
