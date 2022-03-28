@@ -53,6 +53,11 @@ Cấu hình ban đầu cho MariaDB
 
 ![image](https://user-images.githubusercontent.com/62273292/160352206-4651a041-528e-4e10-ad53-5239c59ee309.png)
 
+Đã tạo thành công database.
+
+![image](https://user-images.githubusercontent.com/62273292/160353030-0f8456f5-0aaa-46fd-835f-8ba62e1f2351.png)
+
+
 
 
 
