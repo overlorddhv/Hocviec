@@ -59,6 +59,47 @@ Một ưu điểm tuyệt vời của MariaDB là đã có bản tiếng Việt.
 
 
 
+## So sánh giữa MySQL và MariaDB
+
+**Điểm khác biệt giữa MySQL và MariaDB là gì? **
+
+Cả MySQL và MariaDB đều là những hệ quản trị cơ sở dữ liệu phổ biến và được nhiều chuyên gia đánh giá cao. Tuy nhiên, giữa 2 hệ thống này cũng có những điểm khác biệt như sau:
+
+- Về cơ sở hình thành
+
+- Ngôn ngữ lập trình hỗ trợ
+
+- Công cụ lưu trữ
+
+**Về cơ sở hình thành**
+
+Sự khác biệt trong cơ sở hình thành với MariaDB là gì? MySQL được hình thành từ năm 1995 dựa trên cơ sở của C / C ++, và hiện tại được duy trì và phát triển bởi đội ngũ Oracle.
+
+Phiên bản đầu tiên của MariaDB ra mắt vào năm 2009, được phát triển trên nền tảng MySQL và thừa kế những ưu điểm của MySQL.
+
+Theo số liệu thống kê, trong số các hệ thống quản trị cơ sở dữ liệu, MySQL xếp ở vị trí thứ 2 trong khi MariaDB xếp ở vị trí thứ 9.
+
+**Khác biệt giữa mã nguồn MYSQL và MariaDB là gì?**
+
+
+-MySQL: Mã nguồn đóng
+
+-MariaDB: Mã nguồn mở
+
+**Ngôn ngữ lập trình hỗ trợ**
+
+- MySQL: Ada, C, C#, C++, D, Delphi, Eiffel, Erlang, Haskell, Java, JavaScript (Node.js), Objective-C, OCaml, Perl, PHP, Python, Ruby, Scheme, Tcl
+
+- MariaDB: Cũng tương tự MySQL nhưng không hỗ trợ Delphi
+
+**Công cụ lưu trữ**
+
+- MySQL sẽ bao gồm các công cụ lưu trữ sau: InnoDB, MyISAM, BLACKHOLE, CSV, MEMORY, ARCHIVE, MERGE.
+
+- MariaDB bao gồm: InnoDB, MyISAM, BLACKHOLE, CSV, MEMORY, ARCHIVE, MERGE, ColumnStore, MyRocks, Aria, SphinxSE, TokuDB, CONNECT, SEQUENCE, Spider, Cassandra.
+
+
+
 
 
 
