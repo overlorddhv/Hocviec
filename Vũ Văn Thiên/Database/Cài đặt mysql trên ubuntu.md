@@ -22,3 +22,40 @@ Cài đặt mật khẩu
 
 ## Bước 3: Tạo người dùng MySQL chuyên dụng và cấp các đặc quyền
 
+Tạo cơ sỡ dữ liệu
+
+![image](https://user-images.githubusercontent.com/62273292/160340840-26d5090e-4395-4c31-b132-ca80b350e6bd.png)
+
+Kiểm tra xem sql đã chạy chưa
+
+![image](https://user-images.githubusercontent.com/62273292/160344832-5b5bfe95-1fca-4124-8922-c64fe88752ea.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
