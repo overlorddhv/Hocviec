@@ -33,6 +33,7 @@ Các mô hình Database phổ biến hiện nay
 Gồm 2 loại chính sau:
 
 Cơ sở dữ liệu dùng hệ điều hành Linux: MySQL và Mariadb.
+
 Cơ sở dữ liệu dùng hệ điều hành Windows: SQL Server và MSSQL
 
 ![image](https://user-images.githubusercontent.com/62273292/160314263-dd375d5b-6afa-4355-92f5-d699610d9fd2.png)
