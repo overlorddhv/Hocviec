@@ -73,6 +73,43 @@ Tạo cơ sở dữ liệu và tạo người dùng (tạo 1 bảng trước)
 
 
 
+Cài đặt
+
+Thêm PHP PPA
+
+![image](https://user-images.githubusercontent.com/62273292/160574717-2256149b-944b-4adb-a744-1c3a0c98b2a5.png)
+
+
+Cài đặt php trên ubuntu
+
+![image](https://user-images.githubusercontent.com/62273292/160578790-95c11031-e7ab-4e84-a310-d501efe86548.png)
+
+
+Kiểm tra phiên bản php 
+
+![image](https://user-images.githubusercontent.com/62273292/160578893-a0fcc227-87a5-4f34-a36b-9728d372bb76.png)
+
+Cài đặt php modules
+
+![image](https://user-images.githubusercontent.com/62273292/160579111-153f411c-eb0b-41c0-8850-dfdd93ad0d90.png)
+
+![image](https://user-images.githubusercontent.com/62273292/160579359-ba67fbb9-32e2-4f70-a165-a5e3ed47a1f8.png)
+
+
+Cấu hình php modules
+
+![image](https://user-images.githubusercontent.com/62273292/160579766-f11cc0d5-9710-4ca9-8d19-6bc1b477f969.png)
+
+tạo file info.php trong đường dần ( /var/www/vanthien.com/info.php)
+
+![image](https://user-images.githubusercontent.com/62273292/160580019-ac404121-302e-4f91-8720-49733f96fdbd.png)
+
+
+
+![image](https://user-images.githubusercontent.com/62273292/160587600-7e2b5cdb-d4ac-4b9a-9f97-65e69ce06ddd.png)
+
+
+
 
 
 
