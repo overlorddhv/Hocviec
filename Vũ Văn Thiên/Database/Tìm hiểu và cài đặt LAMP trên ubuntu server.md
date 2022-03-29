@@ -113,10 +113,15 @@ tạo file info.php trong đường dần ( /var/www/vanthien.com/info.php)
 
 
 
+Đăng nhập địa chỉ/phpmyadmin
+
+![image](https://user-images.githubusercontent.com/62273292/160588828-97ec8ab2-8987-4fd1-96ac-685d6b50505a.png)
 
 
 
+đăng nhập vanthienn mk: Vanthien97@1234a
 
+![image](https://user-images.githubusercontent.com/62273292/160589319-92b648b2-39a1-49bc-8d6c-51a713f7699b.png)
 
 
 
