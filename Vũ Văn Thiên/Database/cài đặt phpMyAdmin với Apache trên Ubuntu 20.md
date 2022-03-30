@@ -40,22 +40,62 @@ sudo systemctl restart apache2
 
 ![image](https://user-images.githubusercontent.com/62273292/160551117-051401b2-b556-46af-8346-422c4f017546.png)
 
+Thiết lập vitual host
+
+`sudo mkdir -p /var/www/vanthien.com`
 
 ![image](https://user-images.githubusercontent.com/62273292/160552078-40e8e420-ff76-41fe-b472-ec4b51b58b49.png)
 
+Tiếp theo, gán quyền sở hữu thư mục với user Apache www-data:
+
+`sudo chown -R www-data:www-data /var/www/vanthien.com`
+
+`sudo chmod -R 755 /var/www/your_domain`
 
 ![image](https://user-images.githubusercontent.com/62273292/160552124-e614aa75-abf7-45d9-85af-358e29a0994c.png)
 
+`sudo nano /var/www/your_domain/index.html`
+
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Anh thien dzai</title>
+</head>
+<body>
+	<h1>Web site đầu tiền của anh thiên dzai</h1>
+</body>
+</html>
+```
+
 ![image](https://user-images.githubusercontent.com/62273292/160553041-47c10574-fb11-46c2-b9cc-0790f4a5af41.png)
 
+Tiếp theo các bạn cần tạo file Virtual Hosts /etc/apache2/sites-available/vanthien.com.conf
+
+`sudo nano /etc/apache2/sites-available/vanthien.com.conf`
+
+```
+<VirtualHost *:80>
+    ServerAdmin webmaster@localhost
+    ServerName vanthien.com
+    ServerAlias www.vanthien.com
+    DocumentRoot /var/www/vanthien.com
+    ErrorLog ${APACHE_LOG_DIR}/vanthien.com_error.log
+    CustomLog ${APACHE_LOG_DIR}/vanthien.com_access.log combined
+</VirtualHost>
+```
 
 ![image](https://user-images.githubusercontent.com/62273292/160553770-edc1cffe-2fe0-4ae8-8729-02b0a1ce5e42.png)
 
 ![image](https://user-images.githubusercontent.com/62273292/160555448-a2c58aef-d5bb-494a-a2c1-951c960aa081.png)
 
-
+`sudo a2ensite vanthien.com.conf`
 
 ![image](https://user-images.githubusercontent.com/62273292/160555459-0db26348-00ac-4413-9924-ed4655c6e225.png)
+
+
+
 ![image](https://user-images.githubusercontent.com/62273292/160556227-32927173-eaed-49e1-8a1e-0ea2e7473465.png)
 
 
