@@ -1,23 +1,42 @@
+# CÀI ĐẶT LAMP 
+
+## Cài đặt apache 
+
+`sudo apt update`
 
 ![image](https://user-images.githubusercontent.com/62273292/160549614-cc3b1a03-90e3-45a7-8ccb-991515de112a.png)
 
+`sudo apt install apache2 -y`
 
 ![image](https://user-images.githubusercontent.com/62273292/160549858-c84d1f5d-98f2-4e25-ba22-ee5c82692a1c.png)
 
+```
+sudo a2enmod rewrite
+sudo a2enmod ssl
+sudo a2enmod headers
+sudo systemctl restart apache2
+```
 
 ![image](https://user-images.githubusercontent.com/62273292/160549981-54f05597-7b53-4644-a8ab-b5a8eeecff9c.png)
 
 
+`sudo ufw app list`
+
 ![image](https://user-images.githubusercontent.com/62273292/160550330-1d61a907-824c-415d-b64a-4e1039a1dfef.png)
 
+
+`sudo ufw allow 'Apache'`
 
 ![image](https://user-images.githubusercontent.com/62273292/160550636-00a27ff2-8f0a-4ebc-b20c-7c90958a68a4.png)
 
 
 ![image](https://user-images.githubusercontent.com/62273292/160550854-110abcaa-440c-4d8f-b6b4-e03dda42d95b.png)
 
+`sudo systemctl status apache2`
+
 ![image](https://user-images.githubusercontent.com/62273292/160550975-b3067241-e032-44d6-bb00-3167a99cc68a.png)
 
+Đăng nhập bằng địa chỉ IP
 
 ![image](https://user-images.githubusercontent.com/62273292/160551117-051401b2-b556-46af-8346-422c4f017546.png)
 
