@@ -1,4 +1,4 @@
-# CÀI ĐẶT LAMP 
+# cài đặt phpMyAdmin với Apache trên Ubuntu 20
 
 ## Cài đặt apache 
 
