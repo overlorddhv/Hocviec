@@ -56,6 +56,42 @@ Cú pháp: `Create database thiendzai;`
 
 10. Chèn dữ liệu vào trong bảng
 
+![image](https://user-images.githubusercontent.com/62273292/160746980-daee98aa-c55b-4654-a02d-69a8bc3ea1a9.png)
+
+![image](https://user-images.githubusercontent.com/62273292/160747586-cb8aa925-93ae-4013-b080-8ddfef1939aa.png)
+
+
+## Phân quyền cho user database
+
+- ALL PRIVILEGES – cấp cho user tất cả các đặc quyền.
+
+- CREATE – user có quyền tạo CSDL và bảng.
+
+- DROP – user xóa CSDL và bảng.
+
+- DELETE – user được phép xóa các hàng khỏi một bảng cụ thể.
+
+- INSERT – user được phép chèn các hàng vào bảng cụ thể.
+
+- SELECT – user được phép đọc CSDL.
+
+- UPDATE – user được phép cập nhật các hàng của bảng.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
