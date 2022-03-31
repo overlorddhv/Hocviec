@@ -172,10 +172,29 @@ Cấu hình ban đầu cho MariaDB
 ![image](https://user-images.githubusercontent.com/62273292/160353030-0f8456f5-0aaa-46fd-835f-8ba62e1f2351.png)
 
 
+##  Export database (xuất dữ liệu)
+
+Tạo 1 thư mục để lưu file khi xuất dữ liệu
+
+`mkdir dbbackup`
+
+![image](https://user-images.githubusercontent.com/62273292/160971401-d14f3751-dd2d-43fe-b23b-80b2afc5b7f4.png)
 
 
+Di chuyển đến mục vừa tạo
+
+`cd dbbackup`
+
+![image](https://user-images.githubusercontent.com/62273292/160971458-f637e195-0fc5-4a86-830f-fbc24d1389f6.png)
+
+ Xuất dữ liệu
+ 
+ `mysqldump -u vanthienn -p thiendatabase > hihi.sql`
 
 
+![image](https://user-images.githubusercontent.com/62273292/160971350-367eefa6-02be-4a74-a6b2-a237e731e29a.png)
+
+## 
 
 
 
