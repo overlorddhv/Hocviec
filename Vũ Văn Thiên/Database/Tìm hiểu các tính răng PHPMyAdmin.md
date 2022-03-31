@@ -71,6 +71,16 @@ Nhập các trường trong bảng
 
 ![image](https://user-images.githubusercontent.com/62273292/160784468-d19c609d-c38f-443d-8731-0a4ebae31ab1.png)
 
+Chèn dữ liệu trong bảng
+
+![image](https://user-images.githubusercontent.com/62273292/160957492-90885459-9329-40b5-a1ee-46b1e9cb47bd.png)
+
+![image](https://user-images.githubusercontent.com/62273292/160957559-8f143a57-157b-4040-ba2c-1ccacd32591e.png)
+
+![image](https://user-images.githubusercontent.com/62273292/160957636-86aba405-735d-4dcd-8ded-74a5acc3c4a0.png)
+
+
+
 - Thực hiện truy vấn
 
 
