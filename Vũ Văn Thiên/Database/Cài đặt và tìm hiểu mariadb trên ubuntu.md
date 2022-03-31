@@ -194,7 +194,30 @@ Di chuyển đến mục vừa tạo
 
 ![image](https://user-images.githubusercontent.com/62273292/160971350-367eefa6-02be-4a74-a6b2-a237e731e29a.png)
 
-## 
+## Import database (nhập dữ liệu)
+
+Xóa cơ sở dữ liệu trước khi import dữ liệu
+
+![image](https://user-images.githubusercontent.com/62273292/160972773-f3269114-9c7e-4005-8a76-cafc8399e735.png)
+
+Tạo database mới
+
+![image](https://user-images.githubusercontent.com/62273292/160972904-90b85353-107c-4a51-a181-d7d15b8765af.png)
+
+Di chuyển đến mục lưu trữ file đã lưu,
+
+`cd dbbackup`
+
+Bắt đầu import file đã lưu
+
+`mysql -u vanthienn -p thiendatabase < hihi.sql`
+
+![image](https://user-images.githubusercontent.com/62273292/160974147-261fa92c-1403-414d-95dc-4a825f2f20e6.png)
+
+Vào Mysql, sử dụng tên database và kiểm tra bảng đã có chưa, kiểm tra dữ liệu và hoàn tất
+
+
+![image](https://user-images.githubusercontent.com/62273292/160974264-e47b904b-8efe-4655-bfc1-ade100669fab.png)
 
 
 
