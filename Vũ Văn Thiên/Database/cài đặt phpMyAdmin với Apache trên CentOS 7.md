@@ -157,17 +157,195 @@ Sau khi cấu hình hoàn tất các bạn trỏ tên miền về vps sau đó t
 
 
 
+![image](https://user-images.githubusercontent.com/62273292/161064516-fc1d56e7-ee7f-4cfc-8ad9-dc5da202c80d.png)
+
+
+## Cài đặt MariaDB
+
+![image](https://user-images.githubusercontent.com/62273292/161064749-972b663a-810b-4873-89f7-76e69aa92685.png)
+
+`yum install MariaDB-server MariaDB-client -y`
+
+ Đặt mật khẩu root
+
+```
+systemctl enable mariadb
+systemctl start mariadb
+mysql_secure_installation
+```
+## Cài đặt PHP-FPM và các Module cần thiết
+
+ Cài đặt PHP-FPM
+ 
+ Để cài đặt PHP-FPM các bạn chạy các lệnh sau
+
+```
+yum -y install yum-utils
+rpm -Uvh http://rpms.remirepo.net/enterprise/remi-release-7.rpm
+yum -y update
+
+yum-config-manager --enable remi-php73
+yum -y install php php-fpm php-ldap php-zip php-embedded php-cli php-mysql php-common php-gd php-xml php-mbstring php-mcrypt php-pdo php-soap php-json php-simplexml php-process php-curl php-bcmath php-snmp php-pspell php-gmp php-intl php-imap perl-LWP-Protocol-https php-pear-Net-SMTP php-enchant php-pear php-devel php-zlib php-xmlrpc php-tidy php-mysqlnd php-opcache php-cli php-pecl-zip unzip gcc
+
+```
+
+![image](https://user-images.githubusercontent.com/62273292/161066137-7c2fadcb-bc57-4f31-9763-6fd9914cc09a.png)
+
+![image](https://user-images.githubusercontent.com/62273292/161066317-29642299-9f08-4f96-a35b-45e96e22187b.png)
+
+
+![image](https://user-images.githubusercontent.com/62273292/161068909-b8073381-2bc8-47f6-9ee8-4cafc501295e.png)
+
+Cấu hình php cơ bản
+
+Tất cả cấu hình php cần thiết sẽ nằm trong file /etc/php.ini. Một số thông số cơ bản bạn có thể sửa như sau
+
+```
+;date.timezone =
+expose_php = On
+short_open_tag = Off
+;max_input_vars = 1000
+disable_functions =
+```
+Các bạn sửa lại thành như sau:
+
+```
+date.timezone = Asia/Ho_Chi_Minh
+expose_php = Off
+short_open_tag = On
+max_input_vars = 3000
+disable_functions = exec,system,passthru,shell_exec,proc_close,proc_open,dl,popen,show_source,posix_kill,posix_mkfifo,posix_getpwuid,posix_setpgid,posix_setsid,posix_setuid,posix_setgid,posix_seteuid,posix_setegid,posix_uname
+```
+Cấu hình chạy PHP-FPM
+
+Các bạn mở file /etc/httpd/conf.d/php.conf tìm dòng SetHandler application/x-httpd-php sửa thành SetHandler “proxy:fcgi://127.0.0.1:9000”
 
 
 
+Tiếp theo khởi động lại apache để load lại config
+
+Khởi động PHP-FPM
+
+```
+systemctl start php-fpm
+systemctl enable php-fpm
+```
+
+![image](https://user-images.githubusercontent.com/62273292/161079539-8bcbe5a7-85e4-4600-bb6c-9cd583284e70.png)
+
+Kiểm tra
+
+Để kiểm tra xem PHP-FPM đã hoạt  động hay chưa các bạn tạo file /home/vanthien.com/public_html/info.php với nội dung sau
+
+```
+<?php
+phpinfo();
+?>
+```
+
+![image](https://user-images.githubusercontent.com/62273292/161080144-915a0ca6-a958-49b1-bd38-58f94577677b.png)
+
+## Cài đặt PhpMyAdmin
+
+Để cài đặt PhpMyAdmin các bạn chạy lần lượt các lệnh sau
+
+```
+cd /usr/share
+wget https://files.phpmyadmin.net/phpMyAdmin/5.0.2/phpMyAdmin-5.0.2-all-languages.zip
+unzip phpMyAdmin-5.0.2-all-languages.zip
+mv phpMyAdmin-5.0.2-all-languages phpMyAdmin
+rm -rf phpMyAdmin-5.0.2-all-languages.zip
+rm -rf /usr/share/phpMyAdmin/setup
+```
 
 
+![image](https://user-images.githubusercontent.com/62273292/161086765-5d8d2ac2-a9ce-48f0-8289-046d8a7b94fd.png)
+
+Cấu hình phpMyAdmin
+
+`mv /usr/share/phpMyAdmin/config.sample.inc.php /usr/share/phpMyAdmin/config.inc.php`
+
+Tiếp theo mở file /usr/share/phpMyAdmin/config.inc.php
+
+`nano /usr/share/phpMyAdmin/config.inc.php`
+
+Tìm 
+
+`$cfg['blowfish_secret'] = '';`
+
+thêm một đoạn ký tự bất kỳ vào giữa cặp nháy đơn. Ví dụ:
+
+`$cfg['blowfish_secret'] = 'Vanthien97';`
+
+![image](https://user-images.githubusercontent.com/62273292/161105718-c6320f8d-4de8-4344-b0be-fd4e0e40b5da.png)
 
 
+Tiếp theo thêm vào cuối file doạn code sau
+
+$cfg['TempDir'] = '/usr/share/phpMyAdmin/tmp/';
+
+```
+mkdir -p /usr/share/phpMyAdmin/tmp
+chown -R apache:apache /usr/share/phpMyAdmin/tmp
+```
+## Cấu hình vhost cho PhpMyAdmin
+
+ Tạo file `/etc/httpd/conf.d/phpmyadmin.conf` với nội dung sau
+
+```
+Alias /pma /usr/share/phpMyAdmin
+Alias /phpmyadmin /usr/share/phpMyAdmin
+ 
+<Directory /usr/share/phpMyAdmin/>
+    AddDefaultCharset UTF-8
+    <IfModule mod_authz_core.c>
+    # Apache 2.4
+    <RequireAny>
+        <RequireAll>
+            Require all granted
+        </RequireAll>
+    </RequireAny>
+    </IfModule>
+    <IfModule !mod_authz_core.c>
+        # Apache 2.2
+        Order Deny,Allow
+        Deny from All
+        Allow from All
+        Allow from ::1
+    </IfModule>
+</Directory>
+<Directory /usr/share/phpMyAdmin/log/>
+    Order Deny,Allow
+    Deny from All
+    Allow from None
+</Directory>
+<Directory /usr/share/phpMyAdmin/libraries/>
+    Order Deny,Allow
+    Deny from All
+    Allow from None
+</Directory>
+<Directory /usr/share/phpMyAdmin/templates/>
+    Order Deny,Allow
+    Deny from All
+    Allow from None
+</Directory>
+<Directory /usr/share/phpMyAdmin/tmp/>
+    Order Deny,Allow
+    Deny from All
+    Allow from None
+</Directory>
+```
 
 
+![image](https://user-images.githubusercontent.com/62273292/161105774-e476ba13-ddd6-49eb-9157-65fb125cfcc0.png)
 
 
+![image](https://user-images.githubusercontent.com/62273292/161106499-8375fbfe-5a9b-4ac5-b3ce-d6deb94c4cfb.png)
+
+
+Đăng nhập PhpMyadmin thành công
+
+![Uploading image.png…]()
 
 
 
