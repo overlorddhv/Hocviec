@@ -11,3 +11,9 @@ Chọn custom
 Cài đặt
 
 ![image](https://user-images.githubusercontent.com/62273292/161186812-2b7663be-5717-4972-bd4c-061ed386cbe2.png)
+
+Cài ssms
+
+![image](https://user-images.githubusercontent.com/62273292/161187204-0c6aed17-661f-4e66-a018-e20119c599cd.png)
+
+![image](https://user-images.githubusercontent.com/62273292/161188700-8ebae1ff-b79f-4396-8f83-f5ca260a5fe3.png)
